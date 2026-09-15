@@ -1,0 +1,1371 @@
+<!DOCTYPE html>
+<html lang="ko" itemscope itemtype="https://schema.org/LimousineService">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Primary Meta Tags (SEO) -->
+  <title>Korea Limo VIP - Executive Limousine & Airport Transfer Service</title>
+  <meta name="title" content="Korea Limo VIP - Executive Limousine & Airport Transfer Service">
+  <meta name="description" content="Premium chauffeured limousine and VIP bus transfer between Incheon Airport (ICN) and Seoul. Transparent fixed rates, real-time flight tracking, and private escort.">
+  <meta name="keywords" content="Incheon Airport Limousine, Seoul VIP Chauffeur, Korea Limousine Service, Private Airport Transfer Seoul, VIP Bus Charter Korea">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://korealimovip.com/">
+
+  <!-- Open Graph / Facebook (SEO) -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://korealimovip.com/">
+  <meta property="og:title" content="Korea Limo VIP - Executive Limousine Service">
+  <meta property="og:description" content="All-inclusive VIP transfer service from Incheon/Gimpo airport to Seoul. Professional English-speaking chauffeurs.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1549399542-7e3f8b79c341?q=80&w=1200&auto=format&fit=crop">
+
+  <!-- GEO Location Meta Tags -->
+  <meta name="geo.region" content="KR-11">
+  <meta name="geo.placename" content="Seoul, Incheon Airport">
+  <meta name="geo.position" content="37.4602;126.4407">
+  <meta name="ICBM" content="37.4602, 126.4407">
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LimousineService",
+    "name": "Korea Limo VIP Service",
+    "image": "https://images.unsplash.com/photo-1549399542-7e3f8b79c341?q=80&w=1200&auto=format&fit=crop",
+    "@id": "https://korealimovip.com",
+    "url": "https://korealimovip.com",
+    "telephone": "+82-10-0000-0000",
+    "priceRange": "$180 - $750",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "272 Gonghang-ro, Jung-gu",
+      "addressLocality": "Incheon",
+      "postalCode": "22382",
+      "addressCountry": "KR"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 37.4602,
+      "longitude": 126.4407
+    },
+    "areaServed": [
+      { "@type": "City", "name": "Seoul" },
+      { "@type": "Airport", "name": "Incheon International Airport (ICN)" },
+      { "@type": "Airport", "name": "Gimpo International Airport (GMP)" }
+    ]
+  }
+  </script>
+
+  <!-- Google Fonts & FontAwesome Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <style>
+    /* Reset & Base Styles */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Noto Sans KR', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to bottom, rgba(5, 7, 15, 0.88), rgba(5, 7, 15, 0.96)), 
+                  url('https://images.unsplash.com/photo-1549399542-7e3f8b79c341?q=80&w=1920&auto=format&fit=crop');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      color: #f1f5f9;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .font-serif {
+      font-family: 'Cinzel', serif;
+    }
+
+    /* Header & Navigation */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(8, 10, 16, 0.92);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid rgba(212, 175, 55, 0.25);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      font-size: 1.25rem;
+      font-weight: 800;
+      letter-spacing: 2px;
+      color: #fbbf24;
+      text-decoration: none;
+    }
+
+    nav {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+
+    .nav-btn {
+      background: transparent;
+      border: 1px solid transparent;
+      color: #cbd5e1;
+      font-size: 0.85rem;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      border-radius: 6px;
+    }
+
+    .nav-btn:hover {
+      color: #ffffff;
+      border-color: rgba(251, 191, 36, 0.4);
+    }
+
+    .nav-btn.active {
+      color: #fbbf24;
+      background: rgba(251, 191, 36, 0.12);
+      border-color: #fbbf24;
+      font-weight: 700;
+    }
+
+    /* Language Switcher */
+    .lang-switcher {
+      display: flex;
+      background: rgba(15, 23, 42, 0.9);
+      padding: 0.25rem;
+      border-radius: 8px;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      gap: 0.2rem;
+    }
+
+    .lang-btn {
+      background: transparent;
+      border: none;
+      color: #94a3b8;
+      font-size: 0.75rem;
+      font-weight: 600;
+      padding: 0.3rem 0.6rem;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .lang-btn.active {
+      background: #fbbf24;
+      color: #090d16;
+      font-weight: 700;
+    }
+
+    /* Main Container */
+    main {
+      max-width: 1100px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 3rem 1.5rem;
+    }
+
+    .page {
+      display: none;
+      opacity: 0;
+      transform: translateY(12px);
+      transition: opacity 0.4s ease, transform 0.4s ease;
+    }
+
+    .page.active {
+      display: block;
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Glassmorphism Panel */
+    .glass-panel {
+      background: rgba(15, 23, 42, 0.82);
+      backdrop-filter: blur(16px);
+      border: 1px solid rgba(251, 191, 36, 0.25);
+      border-radius: 16px;
+      padding: 2.5rem;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.7);
+      margin-bottom: 2rem;
+    }
+
+    .page-title {
+      font-size: 2.2rem;
+      font-weight: 800;
+      background: linear-gradient(135deg, #FFF 30%, #F59E0B 70%, #B45309 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 0.5rem;
+    }
+
+    .page-subtitle {
+      color: #fbbf24;
+      font-size: 0.85rem;
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+    }
+
+    /* Company Intro / Greeting Section */
+    .company-intro {
+      position: relative;
+      border-bottom: 1px solid rgba(251, 191, 36, 0.2);
+      padding-bottom: 2.5rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .intro-body {
+      color: #e2e8f0;
+      font-size: 0.98rem;
+      line-height: 1.85;
+      margin-top: 1.2rem;
+    }
+
+    .intro-body p {
+      margin-bottom: 1rem;
+    }
+
+    .intro-highlights {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1rem;
+      margin: 1.8rem 0;
+    }
+
+    .highlight-card {
+      background: rgba(10, 15, 26, 0.7);
+      border: 1px solid rgba(251, 191, 36, 0.2);
+      border-radius: 10px;
+      padding: 1.2rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .highlight-card i {
+      font-size: 1.8rem;
+      color: #fbbf24;
+    }
+
+    .highlight-card h4 {
+      font-size: 0.95rem;
+      color: #ffffff;
+      margin-bottom: 0.2rem;
+    }
+
+    .highlight-card p {
+      font-size: 0.8rem;
+      color: #94a3b8;
+      margin-bottom: 0;
+    }
+
+    .ceo-signature {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 1rem;
+      margin-top: 2rem;
+      padding-top: 1rem;
+    }
+
+    .ceo-signature .title {
+      font-size: 0.85rem;
+      color: #94a3b8;
+    }
+
+    .ceo-signature .name {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: #fbbf24;
+      letter-spacing: 1px;
+    }
+
+    /* Hero Image Boxes */
+    .hero-box {
+      position: relative;
+      height: 280px;
+      border-radius: 12px;
+      overflow: hidden;
+      margin-bottom: 2rem;
+      border: 1px solid rgba(251, 191, 36, 0.3);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.8);
+    }
+
+    .hero-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(15, 23, 42, 0.95), rgba(15, 23, 42, 0.2));
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 2rem;
+    }
+
+    /* Grid & Cards */
+    .content-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1.5rem;
+    }
+
+    .info-card {
+      background: rgba(10, 15, 26, 0.85);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 12px;
+      padding: 1.8rem;
+      transition: all 0.3s ease;
+    }
+
+    .info-card:hover {
+      border-color: rgba(251, 191, 36, 0.4);
+      transform: translateY(-4px);
+    }
+
+    .info-card h3 {
+      color: #fbbf24;
+      font-size: 1.2rem;
+      margin-bottom: 0.8rem;
+      border-bottom: 1px solid rgba(251, 191, 36, 0.2);
+      padding-bottom: 0.4rem;
+    }
+
+    .info-card p {
+      color: #cbd5e1;
+      font-size: 0.9rem;
+      line-height: 1.7;
+    }
+
+    /* Fleet Custom Yourbus List Styles */
+    .fleet-list {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      margin-top: 1.5rem;
+    }
+
+    .fleet-item {
+      background: rgba(10, 15, 26, 0.85);
+      border: 1px solid rgba(251, 191, 36, 0.2);
+      border-radius: 12px;
+      overflow: hidden;
+      display: grid;
+      grid-template-columns: 340px 1fr;
+      transition: all 0.3s ease;
+    }
+
+    .fleet-item:hover {
+      border-color: rgba(251, 191, 36, 0.6);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    }
+
+    .fleet-img-box {
+      height: 100%;
+      min-height: 220px;
+      position: relative;
+    }
+
+    .fleet-img-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .fleet-badge {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      background: #fbbf24;
+      color: #090d16;
+      font-size: 0.75rem;
+      font-weight: 800;
+      padding: 0.25rem 0.6rem;
+      border-radius: 4px;
+    }
+
+    .fleet-info {
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .fleet-info h3 {
+      font-size: 1.3rem;
+      color: #fbbf24;
+      margin-bottom: 0.5rem;
+      font-weight: 700;
+    }
+
+    .fleet-info .desc {
+      color: #cbd5e1;
+      font-size: 0.9rem;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+
+    .fleet-spec-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0.6rem;
+      background: rgba(5, 7, 15, 0.7);
+      padding: 0.8rem;
+      border-radius: 8px;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .fleet-spec-item {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.82rem;
+      color: #e2e8f0;
+    }
+
+    .fleet-spec-item i {
+      color: #fbbf24;
+      width: 16px;
+    }
+
+    /* Table Styles */
+    .table-container {
+      overflow-x: auto;
+      border-radius: 12px;
+      border: 1px solid rgba(251, 191, 36, 0.2);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: rgba(10, 15, 26, 0.9);
+      text-align: left;
+    }
+
+    th, td {
+      padding: 1.2rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    th {
+      background: rgba(30, 41, 59, 0.8);
+      color: #fbbf24;
+      font-size: 0.9rem;
+    }
+
+    td {
+      color: #e2e8f0;
+      font-size: 0.9rem;
+    }
+
+    /* Form Styles */
+    .form-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.2rem;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+    }
+
+    .form-group.full {
+      grid-column: span 2;
+    }
+
+    label {
+      color: #fbbf24;
+      font-size: 0.8rem;
+      font-weight: 600;
+    }
+
+    input, select {
+      background: rgba(5, 7, 15, 0.9);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      padding: 0.81rem;
+      border-radius: 8px;
+      color: #ffffff;
+      font-size: 0.9rem;
+      outline: none;
+    }
+
+    input:focus, select:focus {
+      border-color: #fbbf24;
+      box-shadow: 0 0 10px rgba(251, 191, 36, 0.2);
+    }
+
+    .submit-btn {
+      grid-column: span 2;
+      background: linear-gradient(135deg, #fbbf24 0%, #d97706 100%);
+      color: #090d16;
+      font-weight: 700;
+      padding: 1rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: all 0.3s ease;
+      margin-top: 1rem;
+    }
+
+    .submit-btn:hover {
+      opacity: 0.95;
+      transform: scale(1.005);
+    }
+
+    /* One-Step Date Picker Modal */
+    .date-picker-modal {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.85);
+      z-index: 9999;
+      justify-content: center;
+      align-items: center;
+      padding: 1rem;
+    }
+    .date-picker-content {
+      background: #0f172a;
+      border: 1px solid #fbbf24;
+      border-radius: 12px;
+      width: 100%;
+      max-width: 440px;
+      padding: 1.8rem;
+      box-shadow: 0 20px 50px rgba(0,0,0,0.9);
+    }
+    .calendar-selectors {
+      display: flex;
+      gap: 0.5rem;
+      margin-bottom: 1.2rem;
+    }
+    .calendar-selectors select {
+      flex: 1;
+      background: rgba(30, 41, 59, 0.9);
+      color: #fbbf24;
+      border: 1px solid rgba(251, 191, 36, 0.3);
+      font-weight: bold;
+    }
+    .calendar-days-grid {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      gap: 0.4rem;
+      text-align: center;
+    }
+    .calendar-day-head {
+      color: #94a3b8;
+      font-size: 0.75rem;
+      font-weight: bold;
+      padding-bottom: 0.4rem;
+    }
+    .cal-day-btn {
+      background: rgba(30, 41, 59, 0.6);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      color: #ffffff;
+      padding: 0.6rem 0;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 0.85rem;
+      transition: all 0.2s;
+    }
+    .cal-day-btn:hover {
+      background: rgba(251, 191, 36, 0.3);
+      border-color: #fbbf24;
+    }
+    .cal-day-btn.selected {
+      background: #fbbf24 !important;
+      color: #090d16 !important;
+      font-weight: bold;
+    }
+    .modal-actions {
+      display: flex;
+      gap: 0.8rem;
+      margin-top: 1.5rem;
+    }
+    .modal-btn {
+      flex: 1;
+      padding: 0.75rem;
+      border-radius: 6px;
+      border: none;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .modal-btn.save {
+      background: linear-gradient(135deg, #fbbf24 0%, #d97706 100%);
+      color: #090d16;
+    }
+    .modal-btn.cancel {
+      background: rgba(51, 65, 85, 0.8);
+      color: #cbd5e1;
+    }
+
+    footer {
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      background: rgba(8, 10, 16, 0.95);
+      padding: 1.5rem;
+      text-align: center;
+      font-size: 0.75rem;
+      color: #64748b;
+    }
+
+    @media (max-width: 768px) {
+      .form-grid { grid-template-columns: 1fr; }
+      .form-group.full, .submit-btn { grid-column: span 1; }
+      .fleet-item { grid-template-columns: 1fr; }
+      .fleet-img-box { height: 200px; }
+      .intro-highlights { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header Navigation -->
+  <header>
+    <a href="/" class="logo font-serif" itemprop="url">
+      <i class="fa-solid fa-crown"></i>
+      <span itemprop="name">KOREA LIMO <span style="color:#fff;">VIP</span></span>
+    </a>
+
+    <nav aria-label="Main Navigation">
+      <button class="nav-btn active" data-target="quick-booking" id="nav-booking">HOME & RESERVATION</button>
+      <button class="nav-btn" data-target="rates" id="nav-rates">RATES</button>
+      <button class="nav-btn" data-target="bus-vs-limo" id="nav-vs">BUS VS VIP LIMO</button>
+      <button class="nav-btn" data-target="fleet-seats" id="nav-fleet">FLEET & SEATS</button>
+      <button class="nav-btn" data-target="airport-guide" id="nav-airport">AIRPORT GUIDE</button>
+    </nav>
+
+    <!-- Language Switcher -->
+    <div class="lang-switcher">
+      <button class="lang-btn active" onclick="setLanguage('en')">EN</button>
+      <button class="lang-btn" onclick="setLanguage('ko')">KR</button>
+      <button class="lang-btn" onclick="setLanguage('ja')">JP</button>
+      <button class="lang-btn" onclick="setLanguage('zh')">CN</button>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    
+    <!-- 1. HOME & QUICK BOOKING PAGE -->
+    <section id="quick-booking" class="page active">
+      <div class="glass-panel">
+        
+        <!-- 회사 소개 (Greeting) Section -->
+        <div class="company-intro">
+          <div class="page-subtitle font-serif" id="intro-sub">Welcome to Korea Limo VIP</div>
+          <h1 class="page-title font-serif" id="intro-title">EXECUTIVE VIP TRANSPORTATION</h1>
+          
+          <div class="intro-body">
+            <p id="intro-p1">
+              안녕하십니까, KOREA LIMO VIP 홈페이지를 찾아주신 고객 여러분께 진심으로 감사드립니다.
+            </p>
+            <p id="intro-p2">
+              저희 KOREA LIMO VIP는 최신형 고급 리무진과 우등 전세버스 라인업을 바탕으로, 공항 의전, 귀빈 수송, 기업 워크숍 및 프라이빗 관광 투어까지 최상의 맞춤형 이동 서비스를 제공하고 있습니다.
+            </p>
+            <p id="intro-p3">
+              풍부한 운행 경험을 갖춘 베테랑 기사진과 철저한 정기 차량 점검을 통해 고객 여러분의 소중한 여정이 언제나 안전하고 편안하도록 최선의 노력을 다하겠습니다.
+            </p>
+          </div>
+
+          <!-- Highlight Feature Cards -->
+          <div class="intro-highlights">
+            <div class="highlight-card">
+              <i class="fa-solid fa-shield-halved"></i>
+              <div>
+                <h4 id="hl1-t">안전 우선 운행</h4>
+                <p id="hl1-c">전 차량 정기 점검 및 종합보험 가입</p>
+              </div>
+            </div>
+            <div class="highlight-card">
+              <i class="fa-solid fa-user-tie"></i>
+              <div>
+                <h4 id="hl2-t">전문 의전 기사</h4>
+                <p id="hl2-c">외국어 소통 가능 및 베테랑 운전</p>
+              </div>
+            </div>
+            <div class="highlight-card">
+              <i class="fa-solid fa-star"></i>
+              <div>
+                <h4 id="hl3-t">최고급 최신 차량</h4>
+                <p id="hl3-c">프리미엄 우등 시트 및 최신 편의시설</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- CEO Signature -->
+          <div class="ceo-signature">
+            <span class="title" id="intro-ceo-title">KOREA LIMO VIP 대표</span>
+            <span class="name" id="intro-ceo-name">유 영 진</span>
+          </div>
+        </div>
+
+        <!-- 빠른 예약 하기 (Quick Reservation) Section -->
+        <div>
+          <div style="display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.4rem;">
+            <i class="fa-solid fa-calendar-check" style="color: #fbbf24; font-size: 1.2rem;"></i>
+            <h2 class="font-serif" style="color: #ffffff; font-size: 1.4rem; font-weight: 700;" id="qb-title">QUICK BOOKING</h2>
+          </div>
+          <p style="color: #cbd5e1; font-size:0.88rem; margin-bottom: 1.8rem;" id="qb-desc">
+            원하시는 날짜와 차량을 선택하시면 신속하게 예약을 도와드립니다.
+          </p>
+
+          <form class="form-grid" onsubmit="event.preventDefault(); alert(i18n[currentLang].alert);">
+            <div class="form-group">
+              <label id="lbl-route">Route / Service</label>
+              <select>
+                <option>Incheon Airport (ICN) ↔ Seoul</option>
+                <option>Gimpo Airport (GMP) ↔ Seoul</option>
+                <option>Seoul Full Day Charter (8 Hours)</option>
+                <option>Intercity Long Distance Express</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label id="lbl-vehicle">Vehicle Class</label>
+              <select>
+                <option>15인승 쏠라티 (15-Seater Solati)</option>
+                <option>16인승 벤츠 스프린터 (16-Seater Sprinter)</option>
+                <option>25인승 카운티 / 레스타 (25-Seater Minibus)</option>
+                <option>28인승 우등 리무진 버스 (28-Seater VIP Bus)</option>
+                <option>35인승 중형 버스 (35-Seater Mid-Bus)</option>
+                <option>45인승 대형 버스 (45-Seater Large Bus)</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label id="lbl-date">Pickup Date & Time</label>
+              <input type="text" id="pickup-date-display" readonly placeholder="YYYY-MM-DD" onclick="openDatePicker()" style="cursor: pointer; background: rgba(5, 7, 15, 0.9);">
+            </div>
+            <div class="form-group">
+              <label id="lbl-flight">Flight No. (Optional)</label>
+              <input type="text" placeholder="e.g. KE082">
+            </div>
+            <div class="form-group">
+              <label id="lbl-name">Full Name / Picket Name</label>
+              <input type="text" placeholder="John Doe">
+            </div>
+            <div class="form-group">
+              <label id="lbl-contact">Contact (WhatsApp / KakaoTalk)</label>
+              <input type="text" placeholder="+1 234 567 890">
+            </div>
+            <button type="submit" class="submit-btn font-serif" id="btn-submit">RESERVE NOW</button>
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 2. RATES PAGE -->
+    <section id="rates" class="page">
+      <div class="glass-panel">
+        <div class="page-subtitle font-serif" id="rt-sub">Transparent Pricing</div>
+        <h1 class="page-title font-serif" id="rt-title">ALL-INCLUSIVE RATES</h1>
+        <p style="color: #cbd5e1; font-size:0.9rem; margin-bottom: 1.5rem;" id="rt-desc">
+          No hidden charges. Tolls, parking, and driver fees are included.
+        </p>
+
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th id="th-route">Route / Service</th>
+                <th id="th-sedan">VIP Sedan</th>
+                <th id="th-van">Limousine Van</th>
+                <th id="th-bus">28-Seater Bus</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Incheon Airport (ICN) ↔ Seoul</td>
+                <td style="color:#fbbf24; font-weight:bold;">$220 USD</td>
+                <td style="color:#fbbf24; font-weight:bold;">$290 USD</td>
+                <td style="color:#fbbf24; font-weight:bold;">$450 USD</td>
+              </tr>
+              <tr>
+                <td>Gimpo Airport (GMP) ↔ Seoul</td>
+                <td style="color:#fbbf24; font-weight:bold;">$180 USD</td>
+                <td style="color:#fbbf24; font-weight:bold;">$240 USD</td>
+                <td style="color:#fbbf24; font-weight:bold;">$380 USD</td>
+              </tr>
+              <tr>
+                <td>Seoul Full-Day Charter (8 Hours)</td>
+                <td style="color:#fbbf24; font-weight:bold;">$400 USD</td>
+                <td style="color:#fbbf24; font-weight:bold;">$500 USD</td>
+                <td style="color:#fbbf24; font-weight:bold;">$750 USD</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. BUS VS VIP LIMO PAGE -->
+    <section id="bus-vs-limo" class="page">
+      <div class="glass-panel">
+        <div class="hero-box">
+          <img src="https://images.unsplash.com/photo-1549399542-7e3f8b79c341?q=80&w=1200&auto=format&fit=crop" alt="VIP Limo Interior">
+          <div class="hero-overlay">
+            <div class="page-subtitle font-serif" id="vs-sub">Service Comparison</div>
+            <h1 class="page-title font-serif" id="vs-title">BUS VS VIP LIMO</h1>
+          </div>
+        </div>
+
+        <div class="content-grid">
+          <div class="info-card">
+            <h3 id="vs-card1-t">PUBLIC BUS</h3>
+            <p id="vs-card1-c">• Fixed schedules and waiting in long lines.<br>• Requires walking to hotels with heavy luggage.<br>• Shared space with multiple passengers.</p>
+          </div>
+          <div class="info-card" style="border-color: rgba(251, 191, 36, 0.4);">
+            <h3 id="vs-card2-t">KOREA LIMO VIP</h3>
+            <p id="vs-card2-c">• Door-to-Door: Direct pick-up to hotel lobby.<br>• Flight Tracking: Real-time delay protection.<br>• 100% Private luxury chauffeur service.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. FLEET & SEATS PAGE -->
+    <section id="fleet-seats" class="page">
+      <div class="glass-panel">
+        <div class="page-subtitle font-serif" id="fl-sub">Vehicle Fleet Lineup</div>
+        <h1 class="page-title font-serif" id="fl-title">FLEET & SEATS</h1>
+        <p style="color: #cbd5e1; font-size:0.9rem; margin-bottom: 1.5rem;" id="fl-desc">
+          YOURBUS 라인업과 동일한 최신형 전세버스 및 VIP 리무진 차량을 안내해 드립니다.
+        </p>
+
+        <div class="fleet-list">
+          
+          <!-- 1. 15인승 쏠라티 -->
+          <div class="fleet-item">
+            <div class="fleet-img-box">
+              <img src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?q=80&w=600&auto=format&fit=crop" alt="15인승 쏠라티">
+              <span class="fleet-badge">MINI VAN</span>
+            </div>
+            <div class="fleet-info">
+              <div>
+                <h3 id="fl-v1-t">15인승 쏠라티 (Solati)</h3>
+                <p class="desc" id="fl-v1-c">소규모 그룹, 공항 이동과 비즈니스 일정에 최적화된 럭셔리 밴입니다. 넓은 실내 공간과 편안한 승차감을 제공합니다.</p>
+              </div>
+              <div class="fleet-spec-grid">
+                <div class="fleet-spec-item"><i class="fa-solid fa-users"></i> <span id="fl-v1-s1">추천 탑승: 6 ~ 10명</span></div>
+                <div class="fleet-spec-item"><i class="fa-solid fa-suitcase"></i> <span id="fl-v1-s2">수하물: 캐리어 6~8개</span></div>
+                <div class="fleet-spec-item"><i class="fa-solid fa-wifi"></i> <span>무선 Wi-Fi / USB 충전</span></div>
+                <div class="fleet-spec-item"><i class="fa-solid fa-chair"></i> <span>고급 리클라이닝 시트</span></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. 16인승 벤츠 스프린터 -->
+          <div class="fleet-item">
+            <div class="fleet-img-box">
+              <img src="https://images.unsplash.com/photo-1570125909232-eb263c188f7e?q=80&w=600&auto=format&fit=crop" alt="16인승 벤츠 스프린터">
+              <span class="fleet-badge">VIP LUXURY</span>
+            </div>
+            <div class="fleet-info">
+              <div>
+                <h3 id="fl-v2-t">16인승 벤츠 스프린터 (Sprinter)</h3>
+                <p class="desc" id="fl-v2-c">VIP, 기업 의전, 장거리 이동에 특화된 프라이빗 의전 차량입니다. 높은 천장과 퍼스트클래스 독립 시트를 갖추고 있습니다.</p>
+              </div>
+              <div class="fleet-spec-grid">
+                <div class="fleet-spec-item"><i class="fa-solid fa-users"></i> <span id="fl-v2-s1">추천 탑승: 8 ~ 12명</span></div>
+                <div class="fleet-spec-item"><i class="fa-solid fa-suitcase"></i> <span id="fl-v2-s2">수하물: 캐리어 8~10개</span></div>
+                <div class="fleet-spec-item"><i class="fa-solid fa-tv"></i> <span>대형 스마트 TV / 음향 system</span></div>
+                <div class="fleet-spec-item"><i class="fa-solid fa-couch"></i> <span>최고급 가죽 의전 시트</span></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. 25인승 카운티 -->
+          <div class="fleet-item">
+            <div class="fleet-img-box">
+              <img src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?q=80&w=600&auto=format&fit=crop" alt="25인승 카운티">
+              <span class="fleet-badge">MINI BUS</span>
+            </div>
+            <div class="fleet-info">
+              <div>
+                <h3 id="fl-v3-t">25인승 카운티 / 레스타</h3>
+                <p class="desc" id="fl-v3-c">18명 안팎의 단체 관광, 골프 모임, 학회 및 단체 이동에 가장 실용적이고 경제적인 소형 버스입니다.</p>
+              </div>
+              <div class="fleet-spec-grid">
+                <div class="fleet-spec-item"><i class="fa-solid fa-users"></i> <span id="fl-v3-s1">추천 탑승: 12 ~ 18명</span></div>
+                <div class="fleet-spec-item"><i class="fa-solid fa-suitcase"></i> <span id="fl-v3-s2">수하물: 소형 수하물 적재</span></div>
+                <div class="fleet-spec-item"><i class="fa-solid fa-snowflake"></i> <span>고성능 냉난방 시스템</span></div>
+                <div class="fleet-spec-item"><i class="fa-solid fa-bus"></i> <span>도심 골목 이동 용이</span></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4. 28인승 우등 리무진 -->
+          <div class="fleet-item">
+            <div class="fleet-img-box">
+              <img src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?q=80&w=600&auto=format&fit=crop" alt="28인승 리무진">
+              <span class="fleet-badge">PREMIUM LIMO</span>
+            </div>
+            <div class="fleet-info">
+              <div>
+                <h3 id="fl-v4-t">28인승 우등 리무진 버스</h3>
+                <p class="desc" id="fl-v4-c">2:1 좌석 배열의 우등 우등시트가 적용되어 장거리 이동 시 최상의 피로 회복과 편안함을 보장하는 프리미엄 버스입니다.</p>
+              </div>
+              <div class="fleet-spec-grid">
+                <div class="fleet-spec-item"><i class="fa-solid fa-users"></i> <span id="fl-v4-s1">추천 탑승: 15 ~ 25명</span></div>
+                <div class="fleet-spec-item"><i class="fa-solid fa-suitcase"></i> <span id="fl-v4-s2">수하물: 대형 트렁크 25개</span></div>
+                <div class="fleet-spec-item"><i class="fa-solid fa-angle-double-right"></i> <span>2:1 배열 우등 우등시트</span></div>
+                <div class="fleet-spec-item"><i class="fa-solid fa-charging-station"></i> <span>개별 좌석 충전 포트</span></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 5. 35인승 중형 버스 -->
+          <div class="fleet-item">
+            <div class="fleet-img-box">
+              <img src="https://images.unsplash.com/photo-1570125909232-eb263c188f7e?q=80&w=600&auto=format&fit=crop" alt="35인승 중형버스">
+              <span class="fleet-badge">MID-SIZE BUS</span>
+            </div>
+            <div class="fleet-info">
+              <div>
+                <h3 id="fl-v5-t">35인승 중형 버스 (코치)</h3>
+                <p class="desc" id="fl-v5-c">중형 단체 행사 및 기업 수송에 유용한 버스로, 충분한 수하물 칸과 쾌적한 실내 좌석을 제공합니다.</p>
+              </div>
+              <div class="fleet-spec-grid">
+                <div class="fleet-spec-item"><i class="fa-solid fa-users"></i> <span id="fl-v5-s1">추천 탑승: 20 ~ 30명</span></div>
+                <div class="fleet-spec-item"><i class="fa-solid fa-suitcase"></i> <span id="fl-v5-s2">수하물: 하부 화물창 보유</span></div>
+                <div class="fleet-spec-item"><i class="fa-solid fa-music"></i> <span>음향 및 마이크 시설</span></div>
+                <div class="fleet-spec-item"><i class="fa-solid fa-shield-halved"></i> <span>최신 안전 제어 장치</span></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 6. 45인승 대형 버스 -->
+          <div class="fleet-item">
+            <div class="fleet-img-box">
+              <img src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?q=80&w=600&auto=format&fit=crop" alt="45인승 대형버스">
+              <span class="fleet-badge">LARGE BUS</span>
+            </div>
+            <div class="fleet-info">
+              <div>
+                <h3 id="fl-v6-t">45인승 대형 버스</h3>
+                <p class="desc" id="fl-v6-c">대규모 인원 수송, 워크숍, 학술대회, 대형 관광 그룹에 최적화된 표준 대형 버스입니다.</p>
+              </div>
+              <div class="fleet-spec-grid">
+                <div class="fleet-spec-item"><i class="fa-solid fa-users"></i> <span id="fl-v6-s1">추천 탑승: 30 ~ 43명</span></div>
+                <div class="fleet-spec-item"><i class="fa-solid fa-suitcase"></i> <span id="fl-v6-s2">수하물: 관통형 대형 화물창</span></div>
+                <div class="fleet-spec-item"><i class="fa-solid fa-tv"></i> <span>대형 모니터 / 음향 장비</span></div>
+                <div class="fleet-spec-item"><i class="fa-solid fa-road"></i> <span>장거리 운행 전용 서스펜션</span></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. AIRPORT GUIDE PAGE -->
+    <section id="airport-guide" class="page">
+      <div class="glass-panel">
+        <div class="hero-box">
+          <img src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?q=80&w=1200&auto=format&fit=crop" alt="Airport Pickup">
+          <div class="hero-overlay">
+            <div class="page-subtitle font-serif" id="ap-sub">Arrival Protocol</div>
+            <h1 class="page-title font-serif" id="ap-title">AIRPORT GUIDE</h1>
+          </div>
+        </div>
+
+        <div class="content-grid">
+          <div class="info-card">
+            <h3 id="ap-card1-t">1. Flight Tracking</h3>
+            <p id="ap-card1-c">We monitor your flight status in real-time and adjust pick-up times automatically for any delays.</p>
+          </div>
+          <div class="info-card">
+            <h3 id="ap-card2-t">2. Welcome Board Meeting</h3>
+            <p id="ap-card2-c">Your chauffeur waits at the arrival gate holding a personalized name board for immediate greeting.</p>
+          </div>
+          <div class="info-card">
+            <h3 id="ap-card3-t">3. Direct Transfer</h3>
+            <p id="ap-card3-c">Full luggage assistance and direct escort to the private VIP parking vehicle.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- One-Step Calendar Modal -->
+  <div id="dateModal" class="date-picker-modal">
+    <div class="date-picker-content">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+        <h4 style="color:#fbbf24; font-size:1rem;" id="modal-calendar-title">Select Pickup Date</h4>
+        <button type="button" onclick="closeDatePicker()" style="background:none; border:none; color:#94a3b8; font-size:1.2rem; cursor:pointer;">&times;</button>
+      </div>
+
+      <!-- Year & Month Dropdowns -->
+      <div class="calendar-selectors">
+        <select id="cal-year-select" onchange="renderCalendar()"></select>
+        <select id="cal-month-select" onchange="renderCalendar()"></select>
+      </div>
+
+      <!-- Calendar Days Grid -->
+      <div class="calendar-days-grid">
+        <div class="calendar-day-head" style="color:#f87171;">SUN</div>
+        <div class="calendar-day-head">MON</div>
+        <div class="calendar-day-head">TUE</div>
+        <div class="calendar-day-head">WED</div>
+        <div class="calendar-day-head">THU</div>
+        <div class="calendar-day-head">FRI</div>
+        <div class="calendar-day-head" style="color:#60a5fa;">SAT</div>
+      </div>
+      <div class="calendar-days-grid" id="cal-days-container" style="margin-top:0.4rem;"></div>
+
+      <!-- Action Buttons -->
+      <div class="modal-actions">
+        <button type="button" class="modal-btn cancel" onclick="closeDatePicker()">취소</button>
+        <button type="button" class="modal-btn save" onclick="saveSelectedDate()">저장</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <address style="font-style: normal;" itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+      <span itemprop="streetAddress">272 Gonghang-ro, Jung-gu</span>, <span itemprop="addressLocality">Incheon</span>, <span itemprop="addressCountry">South Korea</span> | Representative: Yoo Young-jin | Contact: <span itemprop="telephone">+82-10-0000-0000</span>
+    </address>
+    <p style="margin-top:0.5rem;">&copy; 2026 Korea Limo VIP Service. All Rights Reserved.</p>
+  </footer>
+
+  <!-- Translation & Core Scripts -->
+  <script>
+    let currentLang = 'en';
+    let tempSelectedDay = null;
+
+    const i18n = {
+      en: {
+        alert: "Your VIP booking request has been sent successfully!",
+        nav: ["HOME & RESERVATION", "RATES", "BUS VS VIP LIMO", "FLEET & SEATS", "AIRPORT GUIDE"],
+        intro: {
+          sub: "Welcome to Korea Limo VIP",
+          title: "EXECUTIVE VIP TRANSPORTATION",
+          p1: "Welcome to KOREA LIMO VIP. We express our deepest gratitude to all our esteemed clients.",
+          p2: "Based on our premier lineup of luxury limousines and VIP charter buses, KOREA LIMO VIP provides tailored transportation for airport escort, VIP transfer, corporate events, and private tours.",
+          p3: "With highly experienced chauffeurs and strict routine vehicle inspections, we commit to delivering a safe, seamless, and comfortable journey every time.",
+          hl1t: "Safety First", hl1c: "Regular inspection & full insurance",
+          hl2t: "Elite Chauffeurs", hl2c: "Multilingual & executive experience",
+          hl3t: "Premium Fleet", hl3c: "First-class recliners & amenities",
+          ceoTitle: "CEO of KOREA LIMO VIP", ceoName: "Yoo Young-jin"
+        },
+        qb: { title: "QUICK BOOKING", desc: "Select your route and date for immediate booking setup.", btn: "RESERVE NOW", route: "Route / Service", vehicle: "Vehicle Class", date: "Pickup Date & Time", flight: "Flight No. (Optional)", name: "Full Name / Picket Name", contact: "Contact (WhatsApp / KakaoTalk)" },
+        rt: { sub: "Transparent Pricing", title: "ALL-INCLUSIVE RATES", desc: "No hidden charges. Tolls, parking, and driver fees are included.", thRoute: "Route / Service", thSedan: "VIP Sedan", thVan: "Limousine Van", thBus: "28-Seater Bus" },
+        vs: { sub: "Service Comparison", title: "BUS VS VIP LIMO", c1t: "PUBLIC BUS", c1c: "• Fixed schedules and waiting in long lines.<br>• Requires walking to hotels with heavy luggage.<br>• Shared space with multiple passengers.", c2t: "KOREA LIMO VIP", c2c: "• Door-to-Door: Direct pick-up to hotel lobby.<br>• Flight Tracking: Real-time delay protection.<br>• 100% Private luxury chauffeur service." },
+        fl: { 
+          sub: "Vehicle Fleet Lineup", title: "FLEET & SEATS", desc: "Full lineup of charter buses and VIP limousines matching YOURBUS standards.",
+          v1t: "15-Seater Solati Mini Van", v1c: "Optimized for small groups, airport transfers, and executive business trips with a spacious interior.", v1s1: "Recommended: 6~10 Passengers", v1s2: "Luggage: 6~8 Suitcases",
+          v2t: "16-Seater Mercedes Sprinter", v2c: "VIP chauffeured luxury van tailored for corporate guests, VIP escort, and long-distance travel.", v2s1: "Recommended: 8~12 Passengers", v2s2: "Luggage: 8~10 Suitcases",
+          v3t: "25-Seater Minibus (County)", v3c: "Practical and economical choice for group tours (~18 passengers), golf outings, and events.", v3s1: "Recommended: 12~18 Passengers", v3s2: "Luggage: Small Luggage Capacity",
+          v4t: "28-Seater Premium Limo Bus", v4c: "First-class 2:1 recliner seating offering ultimate comfort and relaxation for long journeys.", v4s1: "Recommended: 15~25 Passengers", v4s2: "Luggage: 25 Large Suitcases",
+          v5t: "35-Seater Mid-Size Bus", v5c: "Spacious mid-size coach ideal for corporate groups, events, and medium-sized delegations.", v5s1: "Recommended: 20~30 Passengers", v5s2: "Luggage: Under-floor Cargo Bay",
+          v6t: "45-Seater Large Coach Bus", v6c: "Standard full-size bus optimized for large convention groups, workshops, and tour delegations.", v6s1: "Recommended: 30~43 Passengers", v6s2: "Luggage: Large Through-Cargo Bay"
+        },
+        ap: { sub: "Arrival Protocol", title: "AIRPORT GUIDE", c1t: "1. Flight Tracking", c1c: "We monitor flight status in real-time and adjust pick-up times automatically.", c2t: "2. Welcome Board Meeting", c2c: "Chauffeur waits at the arrival gate holding a personalized name board.", c3t: "3. Direct Transfer", c3c: "Full luggage assistance and direct escort to the private VIP vehicle." }
+      },
+      ko: {
+        alert: "VIP 예약 요청이 성공적으로 접수되었습니다!",
+        nav: ["메인 & 빠른 예약", "정찰제 요금표", "공항버스 VS VIP리무진", "보유 차량 및 좌석", "공항 픽업 가이드"],
+        intro: {
+          sub: "KOREA LIMO VIP 오신 것을 환영합니다",
+          title: "고급 VIP 리무진 & 전세버스 수송",
+          p1: "안녕하십니까, KOREA LIMO VIP 홈페이지를 찾아주신 고객 여러분께 진심으로 감사드립니다.",
+          p2: "저희 KOREA LIMO VIP는 최신형 고급 리무진과 우등 전세버스 라인업을 바탕으로, 공항 의전, 귀빈 수송, 기업 워크숍 및 프라이빗 관광 투어까지 최상의 맞춤형 이동 서비스를 제공하고 있습니다.",
+          p3: "풍부한 운행 경험을 갖춘 베테랑 기사진과 철저한 정기 차량 점검을 통해 고객 여러분의 소중한 여정이 언제나 안전하고 편안하도록 최선의 노력을 다하겠습니다.",
+          hl1t: "안전 우선 운행", hl1c: "전 차량 정기 점검 및 종합보험 가입",
+          hl2t: "전문 의전 기사", hl2c: "외국어 소통 가능 및 베테랑 운전",
+          hl3t: "최고급 최신 차량", hl3c: "프리미엄 우등 시트 및 최신 편의시설",
+          ceoTitle: "KOREA LIMO VIP 대표", ceoName: "유 영 진"
+        },
+        qb: { title: "빠른 예약하기", desc: "원하시는 날짜와 차량을 선택하시면 신속하게 예약을 도와드립니다.", btn: "지금 바로 예약", route: "운행 노선 / 서비스", vehicle: "차량 등급", date: "탑승 일시", flight: "항공편 번호 (선택사항)", name: "예약자 성함 / 피켓 표기명", contact: "연락처 (카카오톡 / 연락처)" },
+        rt: { sub: "투명한 정찰제 요금", title: "전 지역 요금표", desc: "숨은 비용이 없습니다. 톨게이트, 주차비, 기사 수고비 포함입니다.", thRoute: "운행 노선", thSedan: "VIP 세단", thVan: "VIP 쏠라티/스프린터", thBus: "28인승 우등버스" },
+        vs: { sub: "서비스 비교 가이드", title: "공항버스 VS VIP 리무진", c1t: "대중교통 공항버스", c1c: "• 정해진 배차 시간 및 긴 대기 줄.<br>• 무거운 수하물을 들고 호텔까지 도보 이동.<br>• 타인과 함께 이용하는 공공 공간.", c2t: "KOREA LIMO VIP", c2c: "• Door-to-Door: 공항 출국장에서 호텔 로비까지 직행.<br>• 실시간 항공 모니터링: 연착 자동 대응.<br>• 100% 프라이빗 최고급 VIP 전용 공간." },
+        fl: { 
+          sub: "최고급 보유 차량 라인업", title: "보유 차량 및 좌석", desc: "YOURBUS 라인업과 동일한 최신형 전세버스 및 VIP 리무진 차량을 안내해 드립니다.",
+          v1t: "15인승 쏠라티 (Solati)", v1c: "소규모 그룹, 공항 이동과 비즈니스 일정에 최적화된 럭셔리 밴입니다. 넓은 실내 공간과 편안한 승차감을 제공합니다.", v1s1: "추천 탑승: 6 ~ 10명", v1s2: "수하물: 캐리어 6~8개",
+          v2t: "16인승 벤츠 스프린터 (Sprinter)", v2c: "VIP, 기업 의전, 장거리 이동에 특화된 프라이빗 의전 차량입니다. 높은 천장과 퍼스트클래스 독립 시트를 갖추고 있습니다.", v2s1: "추천 탑승: 8 ~ 12명", v2s2: "수하물: 캐리어 8~10개",
+          v3t: "25인승 카운티 / 레스타", v3c: "18명 안팎의 단체 관광, 골프 모임, 학회 및 단체 이동에 가장 실용적이고 경제적인 소형 버스입니다.", v3s1: "추천 탑승: 12 ~ 18명", v3s2: "수하물: 소형 수하물 적재",
+          v4t: "28인승 우등 리무진 버스", v4c: "2:1 좌석 배열의 우등 우등시트가 적용되어 장거리 이동 시 최상의 피로 회복과 편안함을 보장하는 프리미엄 버스입니다.", v4s1: "추천 탑승: 15 ~ 25명", v4s2: "수하물: 대형 트렁크 25개",
+          v5t: "35인승 중형 버스 (코치)", v5c: "중형 단체 행사 및 기업 수송에 유용한 버스로, 충분한 수하물 칸과 쾌적한 실내 좌석을 제공합니다.", v5s1: "추천 탑승: 20 ~ 30명", v5s2: "수하물: 하부 화물창 보유",
+          v6t: "45인승 대형 버스", v6c: "대규모 인원 수송, 워크숍, 학술대회, 대형 관광 그룹에 최적화된 표준 대형 버스입니다.", v6s1: "추천 탑승: 30 ~ 43명", v6s2: "수하물: 관통형 대형 화물창"
+        },
+        ap: { sub: "공항 입국 프로토콜", title: "공항 픽업 안내", c1t: "1. 실시간 항공편 추적", c1c: "항공기 조기 도착 및 지연 상황을 실시간 모니터링하여 대기합니다.", c2t: "2. 네임 피켓 미팅", c2c: "입국장 출구에서 예약자명이 기재된 피켓을 들고 정중히 맞이합니다.", c3t: "3. Direct 에스코트", c3c: "수하물 운반 지원 및 VIP 전용 주차장까지 직접 안내해 드립니다." }
+      },
+      ja: {
+        alert: "VIP予約リクエストが正常に送信されました！",
+        nav: ["ホーム・クイック予約", "料金表", "バス VS VIPハイヤー", "保有車両・座席", "空港ピックアップ"],
+        intro: {
+          sub: "KOREA LIMO VIPへようこそ",
+          title: "最高級VIPハイヤー＆貸切バス",
+          p1: "KOREA LIMO VIPのホームページをご覧いただき、誠에ありがとうございます。",
+          p2: "当サービスでは、最新鋭の高級リムジンおよび貸切バスのラインナップにより、空港送迎、VIPハイヤー、企業研修、プライベートツアーまで最適な移動を提供しております。",
+          p3: "熟練の専属ドライバーと徹底した車両点検により、お客様の旅が常に safe かつ快適であるよう努めてまいります。",
+          hl1t: " safe 優先運行", hl1c: "全車定期点検・任意保険完備",
+          hl2t: "プロ専속ドライバー", hl2c: "外国語対応・エスコート",
+          hl3t: "最高級の車両", hl3c: "ファーストクラスシート搭載",
+          ceoTitle: "KOREA LIMO VIP 代表", ceoName: "Yoo Young-jin"
+        },
+        qb: { title: "クイック予約", desc: "ご希望の日時と車種を選択して即時予約を開始できます。", btn: "今すぐ予約する", route: "運行ルート", vehicle: "車種クラス", date: "乗車日時", flight: "便名 (任意)", name: "お名前 / ネームボード名", contact: "ご連絡先 (LINE / WhatsApp)" },
+        rt: { sub: "明朗会計", title: "全プラン料金表", desc: "高速料金、 parking代、専속ドライバー代がすべて含まれています。", thRoute: "運行ルート", thSedan: "VIP セダン", thVan: "VIP バン", thBus: "28人乗り大型バス" },
+        vs: { sub: "サービス比較", title: "路線バス VS VIPハイヤー", c1t: "公共空港バス", c1c: "• 決められた時刻表と長い待ち時間。<br>• 重い荷物を持ってホテルまで徒歩移動。<br>• 他の乗客と同乗する空間。", c2t: "KOREA LIMO VIP", c2c: "• Door-to-Door: 空港到着ロビーからホテルまで直行。<br>• リアルタイムフライト追跡: 遅延時も自動調整。<br>• 100%プライベートな最高級空間。" },
+        fl: { 
+          sub: "保有車両ラインナップ", title: "保有車両・座席案内", desc: "YOURBUSラインナップと同等の最新貸切バス・VIPリムジンをご用意しております。",
+          v1t: "15人乗り ソラティ", v1c: "少人数グループ、空港送迎、ビジネス移動に最適なラグジュアリーバン。", v1s1: "推奨: 6〜10名", v1s2: "荷物: スーツケース6〜8個",
+          v2t: "16人乗り ベンツ スプリンター", v2c: "VIPエスコートや長距離移動に特化した最高級ハイヤーバン。", v2s1: "推奨: 8〜12名", v2s2: "荷物: スーツケース8〜10個",
+          v3t: "25인乗り カウンティ ミニバス", v3c: "18名程度の団体観光やゴルフ旅行に実用的で経済的なミニバス。", v3s1: "推奨: 12〜18名", v3s2: "荷物: 小型荷物積載可能",
+          v4t: "28人乗り リムジンバス", v4c: "2:1配列のファーストクラスシートを採用した最高級リムジンバス。", v4s1: "推奨: 15〜25名", v4s2: "荷物: 大型トランク25個",
+          v5t: "35人乗り 中型バス", v5c: "中規模団体の移動や企業送迎に適した快適な中型バス。", v5s1: "推奨: 20〜30名", v5s2: "荷物: 床下, 荷物室完備",
+          v6t: "45人乗り 大型バス", v6c: "大人数の団体旅行、研修、国際会議に最適な標準大型バス。", v6s1: "推奨: 30〜43名", v6s2: "荷物: 大型貫通式トランク"
+        },
+        ap: { sub: "空港到着プロトコル", title: "空港案内", c1t: "1. フライト追跡", c1c: "到着時間の変更や遅延をリアルタイムで追跡いたします。", c2t: "2. ネームボードでお出迎え", c2c: "到着ゲートにてお名前を入れたボードでお待ちしております。", c3t: "3. ダイレクト案内", c3c: "お荷物の手配から専用駐車場へのご案内まで専任ドライバーが対応。" }
+      },
+      zh: {
+        alert: "您的 VIP 预订申请已成功提交！",
+        nav: ["首页与快速预订", "透明价格", "巴士 VS VIP专车", "车型与座位", "机场接送指南"],
+        intro: {
+          sub: "欢迎来到 KOREA LIMO VIP",
+          title: "尊荣 VIP 专车与包车服务",
+          p1: "您好，衷心感谢您访问 KOREA LIMO VIP 官方网站。",
+          p2: "KOREA LIMO VIP 拥有高级商务车及豪华大巴车队，为您提供机场接送、贵宾接待、企业活动及私人包车游等全方位定制化出行服务。",
+          p3: "凭借经验丰富的专职司机与严格的日常车辆安检，我们致力于让您的每一次出行都安全、尊贵且舒适。",
+          hl1t: "安全第一", hl1c: "全车定期安检与全额保险",
+          hl2t: "专业礼宾司机", hl2c: "具备外语沟通能力与丰富驾驶经验",
+          hl3t: "最高级新款车队", hl3c: "头等舱独立座椅与高级设施",
+          ceoTitle: "KOREA LIMO VIP 代表", ceoName: "Yoo Young-jin"
+        },
+        qb: { title: "快速预订", desc: "选择您的路线与日期，我们将迅速为您安排预订。", btn: "立即预订", route: "服务路线", vehicle: "车辆等级", date: "接送日期与时间", flight: "航班号 (选填)", name: "预订人姓名 / 牌显姓名", contact: "联系方式 (微信 / WhatsApp)" },
+        rt: { sub: "全包透明价格", title: "一口价资费表", desc: "无任何隐形消费。包含高速费、停车费及司机服务费。", thRoute: "服务路线", thSedan: "VIP 轿车", thVan: "VIP 商务车", thBus: "28座豪华巴士" },
+        vs: { sub: "服务对比", title: "机场巴士 VS VIP专车", c1t: "公共机场巴士", c1c: "• 固定班次，需长时间排队等待。<br>• 需携带重型行李步行至酒店。<br>• 与多名乘客共享空间。", c2t: "KOREA LIMO VIP", c2c: "• Door-to-Door: 从机场到达大厅直达酒店大堂。<br>• 航班实时跟踪: 自动应对航班延误。<br>• 100% 尊享私密豪华空间。" },
+        fl: { 
+          sub: "豪华车队阵容", title: "车型与座位指南", desc: "为您提供与 YOURBUS 标准一致的最新款包车及 VIP 连体巴士阵容。",
+          v1t: "15座 索拉蒂 (Solati)", v1c: "非常适合小型团队、机场接送和商务出行的豪华客车。", v1s1: "建议: 6~10 人", v1s2: "行李: 6~8 个行李箱",
+          v2t: "16座 奔驰 Sprinter", v2c: "专为 VIP 贵宾接待及长途出行打造的高级专车。", v2s1: "建议: 8~12 人", v2s2: "行李: 8~10 个行李箱",
+          v3t: "25座 考斯特/County 中巴", v3c: "适合 18 人左右的团队观光、高尔夫出行的经济型中巴。", v3s1: "建议: 12~18 人", v3s2: "行李: 具备小型行李空间",
+          v4t: "28座 头等舱 VIP 巴士", v4c: "采用 2:1 独立座椅布局，为长途旅行提供极致舒适感。", v4s1: "建议: 15~25 人", v4s2: "Luggage: 25 个大号行李箱",
+          v5t: "35座 中型客车", v5c: "适合中等规模团队活动及企业接送的舒适型客车。", v5s1: "建议: 20~30 人", v5s2: "行李: 配备下置行李舱",
+          v6t: "45座 大型客车", v6c: "专为大型代表团、公司年会及大型旅游团打造的标准大巴。", v6s1: "建议: 30~43 人", v6s2: "行李: 大型贯穿式行李舱"
+        },
+        ap: { sub: "接机服务流程", title: "机场接送指南", c1t: "1. 实时航班跟踪", c1c: "实时监控航班动态，延误时自动调整接机时间。", c2t: "2. 举牌迎宾服务", c2c: "司机将在到达口举着印有您姓名的接机牌恭候。", c3t: "3. 尊享直达", c3c: "全程协助搬运行李，并护送至 VIP 专用停车位。" }
+      }
+    };
+
+    function setLanguage(lang) {
+      currentLang = lang;
+      const data = i18n[lang];
+
+      document.querySelectorAll('.lang-btn').forEach(btn => {
+        btn.classList.toggle('active', btn.innerText.toLowerCase() === lang || (lang === 'ko' && btn.innerText === 'KR') || (lang === 'ja' && btn.innerText === 'JP') || (lang === 'zh' && btn.innerText === 'CN'));
+      });
+
+      // Navigation
+      document.getElementById('nav-booking').innerText = data.nav[0];
+      document.getElementById('nav-rates').innerText = data.nav[1];
+      document.getElementById('nav-vs').innerText = data.nav[2];
+      document.getElementById('nav-fleet').innerText = data.nav[3];
+      document.getElementById('nav-airport').innerText = data.nav[4];
+
+      // Intro
+      document.getElementById('intro-sub').innerText = data.intro.sub;
+      document.getElementById('intro-title').innerText = data.intro.title;
+      document.getElementById('intro-p1').innerText = data.intro.p1;
+      document.getElementById('intro-p2').innerText = data.intro.p2;
+      document.getElementById('intro-p3').innerText = data.intro.p3;
+      document.getElementById('hl1-t').innerText = data.intro.hl1t;
+      document.getElementById('hl1-c').innerText = data.intro.hl1c;
+      document.getElementById('hl2-t').innerText = data.intro.hl2t;
+      document.getElementById('hl2-c').innerText = data.intro.hl2c;
+      document.getElementById('hl3-t').innerText = data.intro.hl3t;
+      document.getElementById('hl3-c').innerText = data.intro.hl3c;
+      document.getElementById('intro-ceo-title').innerText = data.intro.ceoTitle;
+      document.getElementById('intro-ceo-name').innerText = data.intro.ceoName;
+
+      // Quick Booking
+      document.getElementById('qb-title').innerText = data.qb.title;
+      document.getElementById('qb-desc').innerText = data.qb.desc;
+      document.getElementById('btn-submit').innerText = data.qb.btn;
+      document.getElementById('lbl-route').innerText = data.qb.route;
+      document.getElementById('lbl-vehicle').innerText = data.qb.vehicle;
+      document.getElementById('lbl-date').innerText = data.qb.date;
+      document.getElementById('lbl-flight').innerText = data.qb.flight;
+      document.getElementById('lbl-name').innerText = data.qb.name;
+      document.getElementById('lbl-contact').innerText = data.qb.contact;
+
+      // Rates
+      document.getElementById('rt-sub').innerText = data.rt.sub;
+      document.getElementById('rt-title').innerText = data.rt.title;
+      document.getElementById('rt-desc').innerText = data.rt.desc;
+      document.getElementById('th-route').innerText = data.rt.thRoute;
+      document.getElementById('th-sedan').innerText = data.rt.thSedan;
+      document.getElementById('th-van').innerText = data.rt.thVan;
+      document.getElementById('th-bus').innerText = data.rt.thBus;
+
+      // VS
+      document.getElementById('vs-sub').innerText = data.vs.sub;
+      document.getElementById('vs-title').innerText = data.vs.title;
+      document.getElementById('vs-card1-t').innerText = data.vs.c1t;
+      document.getElementById('vs-card1-c').innerHTML = data.vs.c1c;
+      document.getElementById('vs-card2-t').innerText = data.vs.c2t;
+      document.getElementById('vs-card2-c').innerHTML = data.vs.c2c;
+
+      // Fleet
+      document.getElementById('fl-sub').innerText = data.fl.sub;
+      document.getElementById('fl-title').innerText = data.fl.title;
+      document.getElementById('fl-desc').innerText = data.fl.desc;
+      document.getElementById('fl-v1-t').innerText = data.fl.v1t;
+      document.getElementById('fl-v1-c').innerText = data.fl.v1c;
+      document.getElementById('fl-v1-s1').innerText = data.fl.v1s1;
+      document.getElementById('fl-v1-s2').innerText = data.fl.v1s2;
+      document.getElementById('fl-v2-t').innerText = data.fl.v2t;
+      document.getElementById('fl-v2-c').innerText = data.fl.v2c;
+      document.getElementById('fl-v2-s1').innerText = data.fl.v2s1;
+      document.getElementById('fl-v2-s2').innerText = data.fl.v2s2;
+      document.getElementById('fl-v3-t').innerText = data.fl.v3t;
+      document.getElementById('fl-v3-c').innerText = data.fl.v3c;
+      document.getElementById('fl-v3-s1').innerText = data.fl.v3s1;
+      document.getElementById('fl-v3-s2').innerText = data.fl.v3s2;
+      document.getElementById('fl-v4-t').innerText = data.fl.v4t;
+      document.getElementById('fl-v4-c').innerText = data.fl.v4c;
+      document.getElementById('fl-v4-s1').innerText = data.fl.v4s1;
+      document.getElementById('fl-v4-s2').innerText = data.fl.v4s2;
+      document.getElementById('fl-v5-t').innerText = data.fl.v5t;
+      document.getElementById('fl-v5-c').innerText = data.fl.v5c;
+      document.getElementById('fl-v5-s1').innerText = data.fl.v5s1;
+      document.getElementById('fl-v5-s2').innerText = data.fl.v5s2;
+      document.getElementById('fl-v6-t').innerText = data.fl.v6t;
+      document.getElementById('fl-v6-c').innerText = data.fl.v6c;
+      document.getElementById('fl-v6-s1').innerText = data.fl.v6s1;
+      document.getElementById('fl-v6-s2').innerText = data.fl.v6s2;
+
+      // Airport
+      document.getElementById('ap-sub').innerText = data.ap.sub;
+      document.getElementById('ap-title').innerText = data.ap.title;
+      document.getElementById('ap-card1-t').innerText = data.ap.c1t;
+      document.getElementById('ap-card1-c').innerText = data.ap.c1c;
+      document.getElementById('ap-card2-t').innerText = data.ap.c2t;
+      document.getElementById('ap-card2-c').innerText = data.ap.c2c;
+      document.getElementById('ap-card3-t').innerText = data.ap.c3t;
+      document.getElementById('ap-card3-c').innerText = data.ap.c3c;
+    }
+
+    /* Date Picker Logic */
+    function initDatePicker() {
+      const yearSelect = document.getElementById('cal-year-select');
+      const monthSelect = document.getElementById('cal-month-select');
+      
+      yearSelect.innerHTML = '';
+      monthSelect.innerHTML = '';
+
+      const currentYear = new Date().getFullYear();
+      for (let y = currentYear; y <= currentYear + 3; y++) {
+        const opt = document.createElement('option');
+        opt.value = y;
+        opt.innerText = y + '년';
+        yearSelect.appendChild(opt);
+      }
+
+      for (let m = 1; m <= 12; m++) {
+        const opt = document.createElement('option');
+        opt.value = m;
+        opt.innerText = m + '월';
+        monthSelect.appendChild(opt);
+      }
+
+      const now = new Date();
+      yearSelect.value = now.getFullYear();
+      monthSelect.value = now.getMonth() + 1;
+      tempSelectedDay = now.getDate();
+    }
+
+    function openDatePicker() {
+      document.getElementById('dateModal').style.display = 'flex';
+      renderCalendar();
+    }
+
+    function closeDatePicker() {
+      document.getElementById('dateModal').style.display = 'none';
+    }
+
+    function renderCalendar() {
+      const year = parseInt(document.getElementById('cal-year-select').value);
+      const month = parseInt(document.getElementById('cal-month-select').value);
+      const container = document.getElementById('cal-days-container');
+      container.innerHTML = '';
+
+      const firstDayIdx = new Date(year, month - 1, 1).getDay();
+      const lastDay = new Date(year, month, 0).getDate();
+
+      for (let i = 0; i < firstDayIdx; i++) {
+        const emptyDiv = document.createElement('div');
+        container.appendChild(emptyDiv);
+      }
+
+      for (let d = 1; d <= lastDay; d++) {
+        const btn = document.createElement('button');
+        btn.type = 'button';
+        btn.className = 'cal-day-btn' + (d === tempSelectedDay ? ' selected' : '');
+        btn.innerText = d;
+        btn.onclick = () => {
+          tempSelectedDay = d;
+          document.querySelectorAll('.cal-day-btn').forEach(b => b.classList.remove('selected'));
+          btn.classList.add('selected');
+        };
+        container.appendChild(btn);
+      }
+    }
+
+    function saveSelectedDate() {
+      if (!tempSelectedDay) {
+        alert("일자를 선택해주세요.");
+        return;
+      }
+      const year = document.getElementById('cal-year-select').value;
+      const month = String(document.getElementById('cal-month-select').value).padStart(2, '0');
+      const day = String(tempSelectedDay).padStart(2, '0');
+      
+      document.getElementById('pickup-date-display').value = `${year}-${month}-${day}`;
+      closeDatePicker();
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      initDatePicker();
+
+      const navButtons = document.querySelectorAll('.nav-btn');
+      const pages = document.querySelectorAll('.page');
+
+      navButtons.forEach(button => {
+        button.addEventListener('click', (e) => {
+          const targetId = e.target.getAttribute('data-target');
+          navButtons.forEach(btn => btn.classList.remove('active'));
+          e.target.classList.add('active');
+          pages.forEach(page => page.classList.remove('active'));
+          const targetPage = document.getElementById(targetId);
+          if (targetPage) targetPage.classList.add('active');
+        });
+      });
+    });
+  </script>
+</body>
+</html>
