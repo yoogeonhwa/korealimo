@@ -1,152 +1,578 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Korea Limo VIP - Luxury Chauffeur & Airport Transfer Service</title>
-    <meta name="description" content="Premier VIP Limousine & Executive Chauffeur Service in South Korea. Incheon Airport Transfers, Corporate Events, Private VIP Tours. 24/7 Service.">
-    <meta name="keywords" content="Korea Limo, Korea Limousine Service, Incheon Airport Limo, VIP Chauffeur Seoul, Korea Van Rental">
-    
-    <!-- Canonical URL Fix -->
-    <link rel="canonical" href="https://yoogeonhwa.github.io/korealimo/">
-    
-    <!-- Open Graph -->
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Korea Limo VIP - Executive Limousine & Airport Transfer">
-    <meta property="og:description" content="World-class VIP chauffeur service, Incheon airport transfers, and executive travel across South Korea.">
-    <meta property="og:url" content="https://yoogeonhwa.github.io/korealimo/">
-    <meta property="og:image" content="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&q=80">
-    
-    <!-- Google Structured Data (JSON-LD) -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "LimousineService",
-      "name": "Korea Limo VIP",
-      "@id": "https://yoogeonhwa.github.io/korealimo/",
-      "url": "https://yoogeonhwa.github.io/korealimo/",
-      "telephone": "+82-10-8280-1114",
-      "priceRange": "$$$",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Seoul",
-        "addressCountry": "KR"
-      },
-      "areaServed": "South Korea",
-      "description": "Executive Limousine, Incheon Airport Transfer & VIP Chauffeur Service in Korea."
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Korea Limo VIP - Luxury Limousine & Airport Transfer Service</title>
+  <meta name="description" content="Korea Limo VIP provides luxury chauffeur service, airport transfers, and private charter bus rentals in Korea by CEO Youngjin Yoo. 24/7 Service.">
+  <meta name="keywords" content="Korea Limo, Korea VIP Transportation, Incheon Airport Transfer, Solati Charter, Benz Sprinter Korea, Youngjin Yoo">
+  <link rel="canonical" href="https://korealimovip.com/">
+
+  <!-- 1. SEO & GEO JSON-LD Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LimousineService",
+    "name": "Korea Limo VIP",
+    "url": "https://korealimovip.com/",
+    "logo": "https://korealimovip.com/logo.png",
+    "image": "https://images.unsplash.com/photo-1563720223185-11003d516935?auto=format&fit=crop&w=1920&q=80",
+    "description": "Premium VIP transportation, private charter bus, and airport transfer services in Korea.",
+    "founder": {
+      "@type": "Person",
+      "name": "Youngjin Yoo",
+      "alternateName": "유영진"
+    },
+    "telephone": "+82-10-8280-1114",
+    "email": "yourbus@naver.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Gangnam-daero",
+      "addressLocality": "Seoul",
+      "addressRegion": "Seoul",
+      "postalCode": "06000",
+      "addressCountry": "KR"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 37.5665,
+      "longitude": 126.9780
+    },
+    "areaServed": [
+      {"@type": "City", "name": "Seoul"},
+      {"@type": "City", "name": "Incheon"},
+      {"@type": "City", "name": "Gyeonggi-do"},
+      {"@type": "City", "name": "Busan"},
+      {"@type": "City", "name": "Jeju"}
+    ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "YourBus Vehicle Lineup",
+      "itemListElement": [
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "15-Seater Hyundai Solati"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "16-Seater Mercedes-Benz Sprinter"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "25-Seater Hyundai County"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "35-Seater Medium Coach"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "45-Seater Large Coach Bus"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "28-Seater VIP Limousine Bus"}}
+      ]
     }
-    </script>
+  }
+  </script>
 
-    <style>
-        :root {
-            --bg-dark: #0a0b10;
-            --glass-bg: rgba(255, 255, 255, 0.05);
-            --glass-border: rgba(255, 255, 255, 0.1);
-            --accent-gold: #d4af37;
-            --text-light: #f3f4f6;
-            --text-dim: #9ca3af;
+  <!-- 2. AEO Optimization JSON-LD FAQ Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How can I book a VIP transfer in Korea?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "You can fill out our online reservation form or contact CEO Youngjin Yoo via WhatsApp (+82-10-8280-1114) for instant quotes and booking."
         }
-
-        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', system-ui, sans-serif; }
-        body { background-color: var(--bg-dark); color: var(--text-light); line-height: 1.6; }
-
-        header {
-            position: fixed; top: 0; width: 100%; z-index: 1000;
-            background: rgba(10, 11, 16, 0.8); backdrop-filter: blur(12px);
-            border-bottom: 1px solid var(--glass-border);
+      },
+      {
+        "@type": "Question",
+        "name": "Do you offer English-speaking driver services?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, Korea Limo VIP provides professional English-speaking drivers for foreign VIPs, corporate clients, and tour groups."
         }
-
-        .nav-container {
-            max-width: 1200px; margin: 0 auto; padding: 1rem 2rem;
-            display: flex; justify-content: space-between; align-items: center;
+      },
+      {
+        "@type": "Question",
+        "name": "What vehicles are available in your fleet?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Our YourBus fleet includes 15-seater Solati, 16-seater Benz Sprinter, 25-seater County, 35-seater Medium Coach, 45-seater Large Coach, and 28-seater VIP Limousine Bus."
         }
+      }
+    ]
+  }
+  </script>
 
-        .logo { font-size: 1.5rem; font-weight: 700; color: var(--accent-gold); text-decoration: none; }
-        .nav-links { display: flex; gap: 1.5rem; list-style: none; }
-        .nav-links a { color: var(--text-light); text-decoration: none; font-size: 0.95rem; transition: 0.3s; }
-        .nav-links a:hover { color: var(--accent-gold); }
+  <style>
+    :root {
+      --primary: #0a1128;
+      --accent: #d4af37;
+      --light-bg: #f4f6f9;
+      --dark-text: #1a1a1a;
+      --white: #ffffff;
+      --gray: #666666;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Pretendard', sans-serif; }
+    body { background-color: var(--light-bg); color: var(--dark-text); line-height: 1.6; }
+    
+    header { background: var(--primary); color: var(--white); padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid var(--accent); }
+    .logo { font-size: 1.6rem; font-weight: 800; color: var(--accent); text-decoration: none; letter-spacing: 1px; }
+    nav { display: flex; align-items: center; gap: 1.2rem; flex-wrap: wrap; }
+    nav a { color: var(--white); text-decoration: none; font-size: 0.9rem; font-weight: 500; transition: color 0.2s; }
+    nav a:hover { color: var(--accent); }
+    .lang-select { background: var(--primary); color: var(--accent); border: 1px solid var(--accent); padding: 0.4rem 0.8rem; border-radius: 4px; cursor: pointer; font-weight: bold; }
 
-        .hero {
-            padding: 180px 2rem 100px; text-align: center;
-            background: linear-gradient(180deg, rgba(212, 175, 55, 0.05) 0%, rgba(10, 11, 16, 0) 100%);
-        }
+    .hero { background: linear-gradient(rgba(10,17,40,0.75), rgba(10,17,40,0.85)), url('https://images.unsplash.com/photo-1563720223185-11003d516935?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat; color: var(--white); text-align: center; padding: 7rem 1rem 5rem; }
+    .hero h1 { font-size: 2.8rem; margin-bottom: 1rem; color: var(--accent); font-weight: 800; }
+    .hero p { font-size: 1.2rem; max-width: 800px; margin: 0 auto 2rem; }
 
-        h1 { font-size: 3rem; margin-bottom: 1rem; color: #fff; }
-        h1 span { color: var(--accent-gold); }
-        .hero p { font-size: 1.2rem; color: var(--text-dim); max-width: 700px; margin: 0 auto 2rem; }
+    .container { max-width: 1200px; margin: 3rem auto; padding: 0 1.5rem; }
+    .section-title { text-align: center; font-size: 2rem; color: var(--primary); margin-bottom: 2rem; position: relative; }
+    .section-title::after { content: ''; display: block; width: 60px; height: 3px; background: var(--accent); margin: 0.5rem auto 0; }
 
-        .btn-primary {
-            display: inline-block; padding: 0.8rem 2rem; background: var(--accent-gold);
-            color: #000; text-decoration: none; font-weight: 600; border-radius: 6px;
-            transition: 0.3s;
-        }
-        .btn-primary:hover { background: #e5be3e; transform: translateY(-2px); }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem; }
+    .card { background: var(--white); border-radius: 8px; padding: 1.8rem; box-shadow: 0 5px 15px rgba(0,0,0,0.08); border-top: 4px solid var(--accent); transition: transform 0.2s; }
+    .card:hover { transform: translateY(-5px); }
+    .card img { width: 100%; height: 200px; object-fit: cover; border-radius: 6px; margin-bottom: 1rem; }
+    .card h3 { color: var(--primary); margin-bottom: 0.5rem; font-size: 1.3rem; }
+    .card p { color: var(--gray); font-size: 0.95rem; }
+    .badge { display: inline-block; background: var(--accent); color: var(--primary); font-weight: bold; font-size: 0.8rem; padding: 0.25rem 0.6rem; border-radius: 4px; margin-bottom: 0.8rem; }
 
-        .section { max-width: 1200px; margin: 0 auto; padding: 80px 2rem; }
-        .glass-card {
-            background: var(--glass-bg); border: 1px solid var(--glass-border);
-            border-radius: 12px; padding: 2.5rem; backdrop-filter: blur(10px);
-            margin-bottom: 2rem;
-        }
+    .subnav { display: flex; justify-content: center; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 2rem; }
+    .subnav a { background: var(--white); color: var(--primary); border: 1px solid #ddd; padding: 0.5rem 1rem; border-radius: 20px; text-decoration: none; font-size: 0.85rem; font-weight: bold; }
+    .subnav a:hover { background: var(--accent); color: var(--primary); border-color: var(--accent); }
 
-        .contact-box { text-align: center; font-size: 1.2rem; margin-top: 1rem; }
-        .contact-box a { color: var(--accent-gold); text-decoration: none; font-weight: bold; }
+    .form-group { margin-bottom: 1.2rem; }
+    .form-group label { display: block; margin-bottom: 0.4rem; font-weight: bold; color: var(--primary); }
+    .form-group input, .form-group select, .form-group textarea { width: 100%; padding: 0.8rem; border: 1px solid #ccc; border-radius: 6px; font-size: 1rem; }
+    .btn-submit { background: var(--accent); color: var(--primary); border: none; padding: 1rem 2rem; border-radius: 6px; cursor: pointer; font-size: 1.1rem; width: 100%; font-weight: bold; transition: background 0.2s; }
+    .btn-submit:hover { background: #b89528; }
 
-        footer { text-align: center; padding: 40px 2rem; border-top: 1px solid var(--glass-border); color: var(--text-dim); }
-    </style>
+    .faq-item { background: var(--white); margin-bottom: 1rem; padding: 1.2rem; border-radius: 6px; border-left: 4px solid var(--accent); }
+    .faq-item h4 { color: var(--primary); margin-bottom: 0.4rem; }
+
+    .page-section { display: none; }
+    .page-section.active { display: block; }
+
+    footer { background: var(--primary); color: var(--white); text-align: center; padding: 3rem 1.5rem; margin-top: 4rem; border-top: 3px solid var(--accent); }
+    footer strong { color: var(--accent); }
+    .whatsapp-float { position: fixed; bottom: 25px; right: 25px; background: #25d366; color: white; padding: 14px 22px; border-radius: 50px; text-decoration: none; font-weight: bold; box-shadow: 0 4px 15px rgba(0,0,0,0.3); z-index: 999; display: flex; align-items: center; gap: 8px; }
+  </style>
 </head>
 <body>
 
-    <header>
-        <div class="nav-container">
-            <!-- 로고 클릭 시 404 방지를 위해 ./ 적용 -->
-            <a href="./" class="logo">Korea Limo VIP</a>
-            <ul class="nav-links">
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </header>
+  <header>
+    <a href="#" class="logo">KOREA LIMO VIP</a>
+    <nav>
+      <a href="#" data-i18n="nav_home">홈</a>
+      <a href="#fleet" data-i18n="nav_fleet">차량 안내</a>
+      <a href="#rates" data-i18n="nav_rates">요금 안내</a>
+      <a href="#region" data-i18n="nav_region">지역별 서비스</a>
+      <a href="#purpose" data-i18n="nav_purpose">용도별 서비스</a>
+      <a href="#faq" data-i18n="nav_faq">FAQ</a>
+      <a href="#reserve" data-i18n="nav_reserve">예약 신청</a>
+      <select class="lang-select" id="langSelect" onchange="changeLanguage(this.value)">
+        <option value="ko">한국어</option>
+        <option value="en">English</option>
+        <option value="ja">日本語</option>
+        <option value="zh">中文</option>
+      </select>
+    </nav>
+  </header>
 
+  <!-- HOME PAGE -->
+  <div id="home" class="page-section active">
     <section class="hero">
-        <h1>Executive <span>Limousine Service</span> in Korea</h1>
-        <p>Premium Chauffeur & Airport Transfer Services for VIP Guests, Corporate Travelers, and Private Tours across South Korea.</p>
-        <a href="https://wa.me/821082801114" class="btn-primary" target="_blank">Book via WhatsApp</a>
+      <h1 data-i18n="hero_title">대한민국 최상급 VIP 수송 & 전세버스</h1>
+      <p data-i18n="hero_desc">공항 피업, VIP 의전, 기업 행사, 그룹 관광 전문 - 유어버스(YourBus Korea)</p>
+      <a href="#reserve" class="btn-submit" style="display:inline-block; width:auto; text-decoration:none;" data-i18n="hero_btn">지금 견적 신청하기</a>
     </section>
 
-    <section id="about" class="section">
-        <div class="glass-card">
-            <h2>About Korea Limo VIP</h2>
-            <p>We deliver world-class transportation solutions with high-end luxury sedans and spacious vans. Our professional drivers are punctual, discreet, and dedicated to your comfort and safety during your stay in Korea.</p>
+    <div class="container">
+      <h2 class="section-title" data-i18n="fleet_title">유어버스 맞춤형 차량 라인업</h2>
+      <div class="grid">
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=600&q=80" alt="15인승 현대 솔라티 VIP 수송">
+          <span class="badge">15인승</span>
+          <h3 data-i18n="v_solati_title">현대 솔라티 (Solati)</h3>
+          <p data-i18n="v_solati_desc">소규모 비즈니스, VIP 임원 의전 및 가족 단위 공항 수송에 최적화된 고급 밴입니다.</p>
         </div>
-    </section>
-
-    <section id="services" class="section">
-        <div class="glass-card">
-            <h2>Our Services</h2>
-            <ul style="list-style-position: inside; margin-top: 1rem; color: var(--text-dim);">
-                <li>Incheon & Gimpo Airport VIP Transfers</li>
-                <li>Executive Corporate Event & Chauffeur Services</li>
-                <li>Customized Private VIP Day Tours</li>
-                <li>Intercity Transfers across South Korea</li>
-            </ul>
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1563720223185-11003d516935?auto=format&fit=crop&w=600&q=80" alt="16인승 벤츠 스프린터 리무진">
+          <span class="badge">16인승</span>
+          <h3 data-i18n="v_sprinter_title">메르세데스-벤츠 스프린터</h3>
+          <p data-i18n="v_sprinter_desc">최고급 프리미엄 의전, VIP 외국인 귀빈 수송 및 격식 있는 장거리 이동을 제공합니다.</p>
         </div>
-    </section>
-
-    <section id="contact" class="section">
-        <div class="glass-card">
-            <h2>Contact & Reservation</h2>
-            <p style="text-align: center; color: var(--text-dim);">For instant bookings and inquiries, please reach out directly to our 24/7 VIP Helpdesk.</p>
-            <div class="contact-box">
-                <p>Phone / WhatsApp: <a href="https://wa.me/821082801114" target="_blank">+82-10-8280-1114</a></p>
-            </div>
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1570125909232-eb263c188f7e?auto=format&fit=crop&w=600&q=80" alt="25인승 현대 카운티 전세버스">
+          <span class="badge">25인승</span>
+          <h3 data-i18n="v_county_title">현대 카운티 (County)</h3>
+          <p data-i18n="v_county_desc">소중형 그룹, 시티투어, 골프 모임 및 공항 피업에 실용적이고 탁월합니다.</p>
         </div>
-    </section>
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=600&q=80" alt="35인승 중형 관광버스">
+          <span class="badge">35인승</span>
+          <h3 data-i18n="v_medium_title">35인승 중형버스</h3>
+          <p data-i18n="v_medium_desc">기업 행사, 학술대회, 관광 및 중형 단체 수송을 위한 쾌적한 버스입니다.</p>
+        </div>
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1570125909232-eb263c188f7e?auto=format&fit=crop&w=600&q=80" alt="45인승 대형 코치버스">
+          <span class="badge">45인승</span>
+          <h3 data-i18n="v_large_title">45인승 대형 코치버스</h3>
+          <p data-i18n="v_large_desc">대규모 수학여행, 대기업 연수, 웨딩 셔틀 및 대형 수하물 이동에 적합합니다.</p>
+        </div>
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1563720223185-11003d516935?auto=format&fit=crop&w=600&q=80" alt="28인승 VIP 우등 리무진 버스">
+          <span class="badge">28인승</span>
+          <h3 data-i18n="v_limo_title">28인승 VIP 우등 리무진</h3>
+          <p data-i18n="v_limo_desc">넓은 우등 좌석과 프리미엄 승차감으로 VIP 장거리 투어 및 고급 단체에 선호됩니다.</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    <footer>
-        <p>&copy; 2026 Korea Limo VIP. All rights reserved.</p>
-    </footer>
+  <!-- FLEET PAGES (차량별 서브페이지) -->
+  <div id="fleet" class="page-section">
+    <div class="container">
+      <h2 class="section-title" data-i18n="nav_fleet">차량별 상세 안내 (Fleet)</h2>
+      <div class="subnav">
+        <a href="#fleet-solati">15인승 솔라티</a>
+        <a href="#fleet-sprinter">16인승 벤츠 스프린터</a>
+        <a href="#fleet-county">25인승 카운티</a>
+        <a href="#fleet-medium">35인승 중형</a>
+        <a href="#fleet-large">45인승 대형</a>
+        <a href="#fleet-limo">28인승 리무진</a>
+      </div>
+      <div class="card">
+        <h3 data-i18n="fleet_sub_text">원하시는 차량을 선택하여 상세 정보 및 정원을 확인하세요.</h3>
+      </div>
+    </div>
+  </div>
 
+  <div id="fleet-solati" class="page-section">
+    <div class="container">
+      <h2>15인승 현대 솔라티 (Hyundai Solati)</h2>
+      <div class="card" style="margin-top:1rem;">
+        <p><strong>추천 인원:</strong> 1~10명 + 수하물</p>
+        <p><strong>주요 용도:</strong> 소규모 VIP 의전, 기업 임원 이동, 가족 공항 픽업</p>
+        <p><strong>특징:</strong> 높고 넓은 실내 공간과 최신 편의장비를 갖춘 최고급 소형 밴입니다.</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="fleet-sprinter" class="page-section">
+    <div class="container">
+      <h2>16인승 메르세데스-벤츠 스프린터 (Benz Sprinter)</h2>
+      <div class="card" style="margin-top:1rem;">
+        <p><strong>추천 인원:</strong> 1~10명 + 수하물</p>
+        <p><strong>주요 용도:</strong> 해외 국빈/VIP 의전, 프리미엄 투어, 고급 세미나</p>
+        <p><strong>특징:</strong> 벤츠의 기술력이 집약된 최고급 가죽 좌석과 완벽한 정숙성을 자랑합니다.</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="fleet-county" class="page-section">
+    <div class="container">
+      <h2>25인승 현대 카운티 (Hyundai County)</h2>
+      <div class="card" style="margin-top:1rem;">
+        <p><strong>추천 인원:</strong> 10~18명</p>
+        <p><strong>주요 용도:</strong> 시티투어, 골프 모임, 중소형 학원/기업 셔틀</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="fleet-medium" class="page-section">
+    <div class="container">
+      <h2>35인승 중형버스 (Medium Coach)</h2>
+      <div class="card" style="margin-top:1rem;">
+        <p><strong>추천 인원:</strong> 15~25명</p>
+        <p><strong>주요 용도:</strong> 기업 워크샵, 학술대회, 중간 규모 단체 여행</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="fleet-large" class="page-section">
+    <div class="container">
+      <h2>45인승 대형 코치버스 (Large Coach)</h2>
+      <div class="card" style="margin-top:1rem;">
+        <p><strong>추천 인원:</strong> 25~40명</p>
+        <p><strong>주요 용도:</strong> 대형 컨벤션, 전국 수송, 대기업 연수, 웨딩 하객 셔틀</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="fleet-limo" class="page-section">
+    <div class="container">
+      <h2>28인승 VIP 우등 리무진 버스 (Limousine)</h2>
+      <div class="card" style="margin-top:1rem;">
+        <p><strong>추천 인원:</strong> 15~25명</p>
+        <p><strong>주요 용도:</strong> 장거리 VIP 수송, 프리미엄 단체 관광</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- REGION PAGES (지역별 서브페이지) -->
+  <div id="region" class="page-section">
+    <div class="container">
+      <h2 class="section-title" data-i18n="nav_region">지역별 서비스 (Regions)</h2>
+      <div class="subnav">
+        <a href="#region-seoul">서울 (Seoul)</a>
+        <a href="#region-incheon">인천/공항 (Incheon)</a>
+        <a href="#region-gyeonggi">경기 (Gyeonggi)</a>
+        <a href="#region-busan">부산 (Busan)</a>
+        <a href="#region-jeju">제주 (Jeju)</a>
+      </div>
+      <div class="card"><p data-i18n="region_info">대한민국 전 지역 맞춤 수송 서비스를 제공합니다.</p></div>
+    </div>
+  </div>
+
+  <div id="region-seoul" class="page-section">
+    <div class="container">
+      <h2>서울 지역 VIP 수송 & 전세버스</h2>
+      <div class="card" style="margin-top:1rem;"><p>강남, 여의도, 광화문 등 주요 비즈니스 거점 및 호텔 픽업 서비스를 완벽 제공합니다.</p></div>
+    </div>
+  </div>
+
+  <div id="region-incheon" class="page-section">
+    <div class="container">
+      <h2>인천국제공항 / 김포공항 피업 & 샌딩</h2>
+      <div class="card" style="margin-top:1rem;"><p>입국 피켓 피업 서비스부터 24시간 정확한 시간 준수로 편안한 공항 이동을 책임집니다.</p></div>
+    </div>
+  </div>
+
+  <div id="region-gyeonggi" class="page-section">
+    <div class="container">
+      <h2>경기도 주요 도시 및 산업단지 수송</h2>
+      <div class="card" style="margin-top:1rem;"><p>판교, 수원의 테크노밸리 및 골프장 셔틀 서비스를 최상의 차량으로 운행합니다.</p></div>
+    </div>
+  </div>
+
+  <div id="region-busan" class="page-section">
+    <div class="container">
+      <h2>부산 및 영남권 VIP 의전 & 장거리 수송</h2>
+      <div class="card" style="margin-top:1rem;"><p>BEXCO 행사, 해운대/광안리 투어 및 전국 장거리 수송 지원.</p></div>
+    </div>
+  </div>
+
+  <div id="region-jeju" class="page-section">
+    <div class="container">
+      <h2>제주도 투어 & 리무진 버스 대차</h2>
+      <div class="card" style="margin-top:1rem;"><p>제주 전역 프라이빗 투어 및 기업 인센티브 관광 수송.</p></div>
+    </div>
+  </div>
+
+  <!-- PURPOSE PAGES (용도별 서브페이지) -->
+  <div id="purpose" class="page-section">
+    <div class="container">
+      <h2 class="section-title" data-i18n="nav_purpose">용도별 맞춤 서비스 (Purposes)</h2>
+      <div class="subnav">
+        <a href="#purpose-airport">공항 수송</a>
+        <a href="#purpose-vip">VIP 의전</a>
+        <a href="#purpose-corporate">기업 행사</a>
+        <a href="#purpose-tour">단체 관광</a>
+      </div>
+      <div class="card"><p data-i18n="purpose_info">목적에 최적화된 맞춤형 차량과 기사 배정을 보장합니다.</p></div>
+    </div>
+  </div>
+
+  <div id="purpose-airport" class="page-section">
+    <div class="container">
+      <h2>공항 픽업 & 샌딩 (Airport Transfers)</h2>
+      <div class="card" style="margin-top:1rem;"><p>항공편 모니터링을 통한 실시간 피업 조정 및 수하물 에스코트 서비스.</p></div>
+    </div>
+  </div>
+
+  <div id="purpose-vip" class="page-section">
+    <div class="container">
+      <h2>VIP & 외국인 귀빈 전용 의전 (VIP Protocol)</h2>
+      <div class="card" style="margin-top:1rem;"><p>외국어 가능 기사 배치, 철저한 보안과 보안 유지 및 보디가드 연계 지원.</p></div>
+    </div>
+  </div>
+
+  <div id="purpose-corporate" class="page-section">
+    <div class="container">
+      <h2>기업 행사 & 컨벤션 셔틀 (Corporate Events)</h2>
+      <div class="card" style="margin-top:1rem;"><p>학술대회, 세미나, 주주총회 대규모 인원 수송 스케줄링 완벽 대응.</p></div>
+    </div>
+  </div>
+
+  <div id="purpose-tour" class="page-section">
+    <div class="container">
+      <h2>프라이빗 단체 관광 & 골프 투어 (Private Tours)</h2>
+      <div class="card" style="margin-top:1rem;"><p>전국 주요 관광지 및 골프장 맞춤 일정 차터 버스 서비스.</p></div>
+    </div>
+  </div>
+
+  <!-- RATES PAGE -->
+  <div id="rates" class="page-section">
+    <div class="container">
+      <h2 class="section-title" data-i18n="nav_rates">예상 요금 안내 (Rates)</h2>
+      <div class="card">
+        <p data-i18n="rates_info">요금은 운행 거리, 이용 시간, 차량 종류 및 유류비/통행료 포함 여부에 따라 변동될 수 있습니다. 정확한 견적은 1:1 상담을 통해 제공됩니다.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- FAQ PAGE (AEO 핵심) -->
+  <div id="faq" class="page-section">
+    <div class="container">
+      <h2 class="section-title" data-i18n="nav_faq">자주 묻는 질문 (FAQ)</h2>
+      <div class="faq-item">
+        <h4 data-i18n="faq_q1">Q. 예약 및 견적 문의는 어떻게 하나요?</h4>
+        <p data-i18n="faq_a1">온라인 예약 폼을 제출하시거나, 대표 유영진 카카오톡/WhatsApp(+82-10-8280-1114)으로 연락주시면 즉시 안내해 드립니다.</p>
+      </div>
+      <div class="faq-item">
+        <h4 data-i18n="faq_q2">Q. 외국어 소통이 가능한 기사님이 배정되나요?</h4>
+        <p data-i18n="faq_a2">네, 해외 VIP 의전 전문 서비스답게 영어 및 외국어 소통이 가능한 베테랑 기사님을 우선 배정합니다.</p>
+      </div>
+      <div class="faq-item">
+        <h4 data-i18n="faq_q3">Q. 요금에 통행료, 유류비, 기사 수고비가 포함되어 있나요?</h4>
+        <p data-i18n="faq_a3">사전 견적 작성 시 고객님의 요청에 맞춰 통행료, 유류비, 주차비를 포함한 올인원(All-Inclusive) 견적을 발행해 드립니다.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- RESERVE PAGE -->
+  <div id="reserve" class="page-section">
+    <div class="container" style="max-width:650px;">
+      <h2 class="section-title" data-i18n="reserve_title">온라인 견적 및 예약 신청</h2>
+      <form class="card" style="margin-top:1rem;" onsubmit="alert('예약 신청이 접수되었습니다. 대표 유영진이 빠르게 연락드리겠습니다.'); return false;">
+        <div class="form-group">
+          <label data-i18n="lbl_name">성함 / 대표자명</label>
+          <input type="text" required placeholder="예: Hong Gil Dong">
+        </div>
+        <div class="form-group">
+          <label data-i18n="lbl_email">이메일 주소</label>
+          <input type="email" required placeholder="example@email.com">
+        </div>
+        <div class="form-group">
+          <label data-i18n="lbl_vehicle">희망 차량 선택</label>
+          <select>
+            <option>15인승 현대 솔라티 (Solati)</option>
+            <option>16인승 메르세데스 벤츠 스프린터 (Sprinter)</option>
+            <option>25인승 현대 카운티 (County)</option>
+            <option>35인승 중형버스 (Medium Bus)</option>
+            <option>45인승 대형 코치버스 (Large Coach)</option>
+            <option>28인승 VIP 우등 리무진 (Limousine)</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label data-i18n="lbl_details">일정 및 운행 세부사항</label>
+          <textarea rows="4" placeholder="날짜, 픽업 장소, 목적지, 인원수를 적어주세요."></textarea>
+        </div>
+        <button type="submit" class="btn-submit" data-i18n="btn_submit">견적 및 예약 문의하기</button>
+      </form>
+    </div>
+  </div>
+
+  <footer>
+    <p><strong>Korea Limo VIP</strong> | 대표자: <strong>유영진 (Youngjin Yoo)</strong></p>
+    <p>이메일: <strong>yourbus@naver.com</strong> | 문의 전화: <strong>+82-10-8280-1114</strong></p>
+    <p>© Korea Limo VIP & YourBus Korea. All Rights Reserved.</p>
+  </footer>
+
+  <a href="https://wa.me/821082801114" class="whatsapp-float" target="_blank">💬 WhatsApp 문의 (+82-10-8280-1114)</a>
+
+  <script>
+    // Complete Multi-Language i18n Dictionary
+    const i18n = {
+      ko: {
+        nav_home: "홈", nav_fleet: "차량 안내", nav_rates: "요금 안내", nav_region: "지역별 서비스", nav_purpose: "용도별 서비스", nav_faq: "FAQ", nav_reserve: "예약 신청",
+        hero_title: "대한민국 최상급 VIP 수송 & 전세버스", hero_desc: "공항 피업, VIP 의전, 기업 행사, 그룹 관광 전문 - 유어버스(YourBus Korea)", hero_btn: "지금 견적 신청하기",
+        fleet_title: "유어버스 맞춤형 차량 라인업",
+        v_solati_title: "현대 솔라티 (Solati)", v_solati_desc: "소규모 비즈니스, VIP 임원 의전 및 가족 단위 공항 수송에 최적화된 고급 밴입니다.",
+        v_sprinter_title: "메르세데스-벤츠 스프린터", v_sprinter_desc: "최고급 프리미엄 의전, VIP 외국인 귀빈 수송 및 격식 있는 장거리 이동을 제공합니다.",
+        v_county_title: "현대 카운티 (County)", v_county_desc: "소중형 그룹, 시티투어, 골프 모임 및 공항 피업에 실용적이고 탁월합니다.",
+        v_medium_title: "35인승 중형버스", v_medium_desc: "기업 행사, 학술대회, 관광 및 중형 단체 수송을 위한 쾌적한 버스입니다.",
+        v_large_title: "45인승 대형 코치버스", v_large_desc: "대규모 수학여행, 대기업 연수, 웨딩 셔틀 및 대형 수하물 이동에 적합합니다.",
+        v_limo_title: "28인승 VIP 우등 리무진", v_limo_desc: "넓은 우등 좌석과 프리미엄 승차감으로 VIP 장거리 투어 및 고급 단체에 선호됩니다.",
+        fleet_sub_text: "원하시는 차량을 선택하여 상세 정보 및 정원을 확인하세요.",
+        region_info: "대한민국 전 지역 맞춤 수송 서비스를 제공합니다.",
+        purpose_info: "목적에 최적화된 맞춤형 차량과 기사 배정을 보장합니다.",
+        rates_info: "요금은 운행 거리, 이용 시간, 차량 종류 및 유류비/통행료 포함 여부에 따라 변동될 수 있습니다. 정확한 견적은 1:1 상담을 통해 제공됩니다.",
+        faq_q1: "Q. 예약 및 견적 문의는 어떻게 하나요?", faq_a1: "온라인 예약 폼을 제출하시거나, 대표 유영진 카카오톡/WhatsApp(+82-10-8280-1114)으로 연락주시면 즉시 안내해 드립니다.",
+        faq_q2: "Q. 외국어 소통이 가능한 기사님이 배정되나요?", faq_a2: "네, 해외 VIP 의전 전문 서비스답게 영어 및 외국어 소통이 가능한 베테랑 기사님을 우선 배정합니다.",
+        faq_q3: "Q. 요금에 통행료, 유류비, 기사 수고비가 포함되어 있나요?", faq_a3: "사전 견적 작성 시 고객님의 요청에 맞춰 통행료, 유류비, 주차비를 포함한 올인원(All-Inclusive) 견적을 발행해 드립니다.",
+        reserve_title: "온라인 견적 및 예약 신청", lbl_name: "성함 / 대표자명", lbl_email: "이메일 주소", lbl_vehicle: "희망 차량 선택", lbl_details: "일정 및 운행 세부사항", btn_submit: "견적 및 예약 문의하기"
+      },
+      en: {
+        nav_home: "Home", nav_fleet: "Fleet", nav_rates: "Rates", nav_region: "Regions", nav_purpose: "Services", nav_faq: "FAQ", nav_reserve: "Reservation",
+        hero_title: "Korea Top-Tier VIP Transport & Charter Bus", hero_desc: "Airport Transfers, Executive Protocol, Corporate Events & Group Tours - YourBus Korea", hero_btn: "Get Instant Quote",
+        fleet_title: "YourBus Vehicle Lineup",
+        v_solati_title: "15-Seater Hyundai Solati", v_solati_desc: "Ideal premium van for small group business, VIP transfers, and family airport pickups.",
+        v_sprinter_title: "16-Seater Mercedes-Benz Sprinter", v_sprinter_desc: "Luxury VIP transportation designed for foreign dignitaries, executives, and multi-day tours.",
+        v_county_title: "25-Seater Hyundai County", v_county_desc: "Practical option for mid-size groups, city tours, golf trips, and airport transfers.",
+        v_medium_title: "35-Seater Medium Coach", v_medium_desc: "Comfortable coach for corporate events, academic conferences, and medium group travel.",
+        v_large_title: "45-Seater Large Coach Bus", v_large_desc: "Perfect for large groups, university tours, corporate retreats, and heavy luggage.",
+        v_limo_title: "28-Seater VIP Limousine Bus", v_limo_desc: "Reclining premium seats for high-end group travel, VIP tours, and long-distance comfort.",
+        fleet_sub_text: "Select a vehicle to view detailed specifications and capacity.",
+        region_info: "We provide tailored transportation services across all regions in South Korea.",
+        purpose_info: "Guaranteed optimal vehicle and professional driver matching for your specific purpose.",
+        rates_info: "Rates vary depending on route distance, operating hours, vehicle model, and tolls/fuel inclusions. Contact us for an exact quotation.",
+        faq_q1: "Q. How can I request a quote or booking?", faq_a1: "Submit our online form or contact CEO Youngjin Yoo via WhatsApp (+82-10-8280-1114) for immediate assistance.",
+        faq_q2: "Q. Are English-speaking drivers available?", faq_a2: "Yes, experienced drivers fluent in English are assigned for foreign VIPs and international groups.",
+        faq_q3: "Q. Are tolls and fuel included in the price?", faq_a3: "We offer all-inclusive quotes covering tolls, fuel, and parking fees upon request.",
+        reserve_title: "Online Quote & Booking Request", lbl_name: "Full Name", lbl_email: "Email Address", lbl_vehicle: "Select Vehicle", lbl_details: "Itinerary & Schedule Details", btn_submit: "Request Quote Now"
+      },
+      ja: {
+        nav_home: "ホーム", nav_fleet: "車両案内", nav_rates: "料金案内", nav_region: "地域別", nav_purpose: "用途別", nav_faq: "FAQ", nav_reserve: "予約申請",
+        hero_title: "韓国 VIP Transports & 貸切バス", hero_desc: "空港送迎、VIPハイヤー、ビジネス移動、団体観光専門 - YourBus Korea", hero_btn: "今すぐ見積もり依頼",
+        fleet_title: "YourBus 車両ラインナップ",
+        v_solati_title: "15人乗り 現代ソラティ", v_solati_desc: "少人数ビジネス、VIP役員送迎、空港送迎に最適な高級バン。",
+        v_sprinter_title: "16人乗り ベンツ スプリンター", v_sprinter_desc: "最高級VIPハイヤー、海外VIP送迎、長距離移動を提供。",
+        v_county_title: "25人乗り 現代カウンティ", v_county_desc: "中規模グループ、市内観光、ゴルフツアー、空港送迎に実用적.",
+        v_medium_title: "35人乗り 中型バス", v_medium_desc: "企業イベント、学会、観光、中規模団体の快適な移動。",
+        v_large_title: "45人乗り 大型コーチバス", v_large_desc: "大型団体、研修、結婚式シャトル、大量の荷物の移動に最適。",
+        v_limo_title: "28人乗り VIP リムジンバス", v_limo_desc: "広々とした優等座席とプレミアムな乗り心地のVIP長距離バス。",
+        fleet_sub_text: "ご希望の車両を選択して詳細を確認してください。",
+        region_info: "韓国全域で最適な輸送サービスを提供します。",
+        purpose_info: "目的に合わせた最適な車両とドライバーを配置します。",
+        rates_info: "料金は移動距離、利用時間、車種によって異なります。",
+        faq_q1: "Q. 予約方法を教えてください。", faq_a1: "オンラインフォームまたは代表 柳永珍 (Youngjin Yoo) のWhatsApp (+82-10-8280-1114) までお問合せください。",
+        faq_q2: "Q. 外国語対応のドライバーはいますか？", faq_a2: "はい、英語や外国語対応が可能なベテランドライバーを優先配置します。",
+        faq_q3: "Q. 料金に高速代や燃料代は含まれますか？", faq_a3: "事前見積もりの際、高速代・燃料代・駐車代を含めたオールインワン料金でご案内します。",
+        reserve_title: "オンライン見積もり・予約", lbl_name: "お名前", lbl_email: "メールアドレス", lbl_vehicle: "希望車両", lbl_details: "日程・詳細", btn_submit: "見積もりを送信"
+      },
+      zh: {
+        nav_home: "首页", nav_fleet: "车型指南", nav_rates: "价格指南", nav_region: "区域服务", nav_purpose: "服务用途", nav_faq: "常见问题", nav_reserve: "在线预订",
+        hero_title: "韩国 顶级 VIP 专车 & 包车巴士", hero_desc: "专业提供机场接送、商务礼宾、企业活动及团体旅游服务 - YourBus Korea", hero_btn: "立即获取报价",
+        fleet_title: "YourBus 車型陣容",
+        v_solati_title: "15座 现代 Solati", v_solati_desc: "适合小型商务、VIP高管接送及家庭机场接送的高级商务车。",
+        v_sprinter_title: "16座 奔驰 Sprinter", v_sprinter_desc: "提供尊贵VIP礼宾服务、外宾接送及高规格长途出行。",
+        v_county_title: "25座 现代 County", v_county_desc: "适合中小型团体、城市游、高尔夫出游及机场接送。",
+        v_medium_title: "35座 中型巴士", v_medium_desc: "适合企业活动、学术会议及中型团体出行的舒适巴士。",
+        v_large_title: "45座 大型大巴车", v_large_desc: "适合大型团队、企业培训、婚礼接送及多行李出行。",
+        v_limo_title: "28座 VIP 豪华头等舱巴士", v_limo_desc: "宽敞头等舱座椅，专为VIP长途旅游及高端团队设计。",
+        fleet_sub_text: "请选择所需车型查看详细规格与载客量。",
+        region_info: "我们为全韩国所有地区提供定制化运输服务。",
+        purpose_info: "根据您的具体用途，保证匹配最佳车辆与专业司机。",
+        rates_info: "费用将根据行程距离、使用时间、车型及包含费用而定。",
+        faq_q1: "Q. 如何进行预订或咨询报价？", faq_a1: "您可以填写在线表单，或直接联系代表 柳永珍 (Youngjin Yoo) WhatsApp (+82-10-8280-1114)。",
+        faq_q2: "Q. 是否提供支持外语沟通的司机？", faq_a2: "是的，我们优先安排精通英语及外语的资深司机为您服务。",
+        faq_q3: "Q. 报价是否包含高速费与油费？", faq_a3: "根据您的需求，我们可以提供包含高速费、油费及停车费的全包报价。",
+        reserve_title: "在线报价与预订", lbl_name: "姓名", lbl_email: "电子邮箱", lbl_vehicle: "选择车型", lbl_details: "行程细节", btn_submit: "提交询价"
+      }
+    };
+
+    // Real-Time Multi-Language Switcher for ENTIRE Site
+    function changeLanguage(lang) {
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        if (i18n[lang] && i18n[lang][key]) {
+          el.textContent = i18n[lang][key];
+        }
+      });
+    }
+
+    // Hash-based Subpage Routing System (Restored & Enhanced)
+    function routePage() {
+      const hash = window.location.hash || '#home';
+      document.querySelectorAll('.page-section').forEach(sec => sec.classList.remove('active'));
+      const target = document.querySelector(hash);
+      if (target) {
+        target.classList.add('active');
+        window.scrollTo(0, 0);
+      } else {
+        document.querySelector('#home').classList.add('active');
+      }
+    }
+
+    window.addEventListener('hashchange', routePage);
+    window.addEventListener('load', () => {
+      routePage();
+      changeLanguage('ko');
+    });
+  </script>
 </body>
 </html>
